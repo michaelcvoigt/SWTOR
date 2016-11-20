@@ -1,7 +1,5 @@
 ﻿Shader "MaterialSetDebug"
 {
-	_DiffuseMap ("Color (RGB) Alpha (A)", 2D) = "white"
-
 	SubShader {
 		Tags { "RenderType"="Opaque" }
 		LOD 200

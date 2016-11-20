@@ -24,7 +24,7 @@ namespace Cubiquity
 	 * Note how this is conceptually similar to the way that Unity's mesh classes are structured, where the MeshFilter works in conjunction with 
 	 * the Mesh, MeshRenderer and MeshCollider classes.
 	 */
-	//[ExecuteInEditMode]
+	[ExecuteInEditMode]
 	public abstract class Volume : MonoBehaviour
 	{		
 		[SerializeField]
@@ -158,8 +158,6 @@ namespace Cubiquity
         // Update() to be called automatically in edit mode, but it only happens in response to user-driven events such as moving the mouse in the editor
         // window. We want to support background loading of our terrain and so we hook into the 'EditorApplication.update' event for this purpose.
         // ------------------------------------------------------------------------------
-
-        /*
 #if UNITY_EDITOR
 
         private int editModeUpdates = 0;
@@ -169,7 +167,7 @@ namespace Cubiquity
         /// \cond
         public void ForceUpdate()
         {
-            //Update();
+            Update();
         }
 
         /// \cond
@@ -201,8 +199,7 @@ namespace Cubiquity
         /// \endcond
 #endif
         // ------------------------------------------------------------------------------
-
-        */
+		
 		void Awake()
 		{
 			RegisterVolumeData();
@@ -285,14 +282,12 @@ namespace Cubiquity
 				gameObject.SetLayerRecursively(gameObject.layer);
 				previousLayer = gameObject.layer;
 			}
-
-
-
+			
 			// Set shader parameters.
 			VolumeRenderer volumeRenderer = gameObject.GetComponent<VolumeRenderer>();
 			if(volumeRenderer != null)
 			{
-				if(volumeRenderer.material != null)
+				if(volumeRenderer.material != null && data)
 				{
                     Vector3i volumeSize = (data.enclosingRegion.upperCorner - data.enclosingRegion.lowerCorner);
                     volumeSize.x++; volumeSize.y++; volumeSize.z++;
@@ -314,7 +309,6 @@ namespace Cubiquity
 					volumeRenderer.material.SetMatrix("_World2Volume", transform.worldToLocalMatrix);
 				}
 			}
-
 
             if (data != null && data.volumeHandle.HasValue)
             {

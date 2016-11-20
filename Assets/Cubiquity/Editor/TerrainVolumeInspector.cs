@@ -341,7 +341,7 @@ namespace Cubiquity
 
 					// Forcing the update seems to be requireded in Unity 5, whereas in Unity 4 it seems to happen automatically
 					// later as a result of assigning the shader keywords. Seems best to manually call it just in case.
-					//terrainVolume.ForceUpdate();
+					terrainVolume.ForceUpdate();
 				}
 				
 				if ( e.type == EventType.Layout )

@@ -21,7 +21,7 @@ namespace Cubiquity
 	 * ColoredCubesVolumeData are used in conjunction with the ColoredCubesRenderer and ColoredCubesCollider. Please see the documentation of
 	 * the Volume class for more details and a diagram showing how these components are related.
 	 */
-	[ExecuteInEditMode]
+	//[ExecuteInEditMode]
 	public class ColoredCubesVolume : Volume
 	{
 		/**
@@ -54,8 +54,8 @@ namespace Cubiquity
 			coloredCubesVolume.data = data;
 			
 			// Add the renderer and collider if desired.
-			if(addRenderer) { coloredCubesVolumeGameObject.AddComponent<ColoredCubesVolumeRenderer>(); }
-			if(addCollider) { coloredCubesVolumeGameObject.AddComponent<ColoredCubesVolumeCollider>(); }
+			//if(addRenderer) { coloredCubesVolumeGameObject.AddComponent<ColoredCubesVolumeRenderer>(); }
+			//if(addCollider) { coloredCubesVolumeGameObject.AddComponent<ColoredCubesVolumeCollider>(); }
 			
 			// Return the created object
 			return coloredCubesVolumeGameObject;
@@ -65,8 +65,7 @@ namespace Cubiquity
 		// It's actually the gizmo which get's picked which is often bigger than than the volume (unless all
 		// voxels are solid). So somtimes the volume will be selected by clicking on apparently empty space.
 		// We shold try and fix this by using raycasting to check if a voxel is under the mouse cursor?
-	
-		
+
 		/// \cond
         protected override bool SynchronizeOctree(uint availableSyncOperations)
 		{
@@ -75,9 +74,24 @@ namespace Cubiquity
 
 			Vector3 camPos = CameraUtils.getCurrentCameraPosition();
 
-        
+            // This is messy - perhaps the LOD thresold shold not be a parameter to update. Instead it could be passed
+            // as a parameter during traversal, so different traversal could retrieve differnt LODs. We then wouldn't
+            // want a single 'renderThisNode' member of Cubiquity nodes, but instead some threshold we could compare to.
+            float lodThreshold = GetComponent<VolumeRenderer>() ? GetComponent<VolumeRenderer>().lodThreshold : 0.0f;
 
-            bool cubiquityUpToDate = CubiquityDLL.UpdateVolume(data.volumeHandle.Value, camPos.x, camPos.y, camPos.z, 0);
+            int minimumLOD = GetComponent<VolumeRenderer>() ? GetComponent<VolumeRenderer>().minimumLOD : 0;
+
+            // Although the LOD system is partially functional I don't feel it's ready for release yet.
+            // The following line disables it by forcing the highest level of detail to always be used.
+            minimumLOD = 0;
+
+            // Next line commented out so the system starts up with LOD disabled.
+            //if (volumeRenderer != null && volumeRenderer.hasChanged)
+            {
+                CubiquityDLL.SetLodRange(data.volumeHandle.Value, minimumLOD, 0);
+            }
+
+            bool cubiquityUpToDate = CubiquityDLL.UpdateVolume(data.volumeHandle.Value, camPos.x, camPos.y, camPos.z, lodThreshold);
 
 			if(CubiquityDLL.HasRootOctreeNode(data.volumeHandle.Value) == 1)
 			{                        

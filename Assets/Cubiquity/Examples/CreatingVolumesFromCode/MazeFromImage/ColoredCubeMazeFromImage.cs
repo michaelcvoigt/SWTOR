@@ -3,7 +3,7 @@ using System.Collections;
 
 using Cubiquity;
 
-//[ExecuteInEditMode]
+[ExecuteInEditMode]
 public class ColoredCubeMazeFromImage : MonoBehaviour
 {
 
@@ -13,7 +13,8 @@ public class ColoredCubeMazeFromImage : MonoBehaviour
 	// Use this for initialization
 	void Awake ()
 	{
-	  print("sdfasd");
+
+	print("dfasdf");
 
 		// Texture2D mazeImage = Resources.Load("Images/Maze") as Texture2D;
 		// Texture2D colorImage = Resources.Load("Images/Color") as Texture2D;

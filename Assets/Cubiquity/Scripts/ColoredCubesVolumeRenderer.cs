@@ -5,7 +5,7 @@ using Cubiquity.Impl;
 
 namespace Cubiquity
 {	
-
+	[ExecuteInEditMode]
 	/// Controls some visual aspects of the colord cubes volume and allows it to be rendered.
 	/**
 	 * See the base VolumeRenderer class for further details and available properties.

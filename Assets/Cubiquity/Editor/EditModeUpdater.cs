@@ -17,7 +17,7 @@ namespace Cubiquity
             Object[] volumes = Object.FindObjectsOfType(typeof(Volume));
             foreach (Object volume in volumes)
             {
-                //((Volume)volume).EditModeUpdateHandler();
+                ((Volume)volume).EditModeUpdateHandler();
             }
         }
     }

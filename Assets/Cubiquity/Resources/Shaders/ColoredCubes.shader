@@ -4,28 +4,13 @@ Shader "ColoredCubes"
 {	
 	Properties
 	{
-	_DiffuseMap ("Color (RGB) Alpha (A)", 2D) = "white"
-		
+		_DiffuseMap ("Diffuse map", 2D) = "white" {}
 		_NormalMap ("Normal map", 2D) = "bump" {}
 		_NoiseStrength ("Noise strength", Range (0.0,0.5)) = 0.1
-
-
 	}
-
-
-	 Category 
-    {
-       Lighting On
-      
-       Cull Back
-       Blend SrcAlpha OneMinusSrcAlpha
-       Alphatest Greater 0
-
-
-
 	SubShader
 	{
-		Tags { "Queue" = "Overlay" }
+		Tags { "RenderType" = "Opaque" }
 		CGPROGRAM
 		#pragma surface surf Lambert vertex:vert addshadow
 		#pragma target 3.0
@@ -113,7 +98,5 @@ Shader "ColoredCubes"
 			o.Normal = normalFromNormalMap;
 		}				
 		ENDCG	
-
-		}
 	}
 }
