@@ -1,0 +1,50 @@
+D:\Dropbox\SWTOR\SWTOR Galaxy\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+D:\Dropbox\SWTOR\SWTOR Galaxy\obj\Debug\Assembly-CSharp.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Assembly-CSharp.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Assembly-CSharp.pdb
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Assembly-UnityScript-firstpass.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Google.ProtocolBuffers.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEditor.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.Analytics.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.Networking.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.UI.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Mono.Cecil.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Unity.SerializationLogic.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Unity.DataContract.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Unity.UNetWeaver.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Unity.CecilTools.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.xml
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEditor.xml
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.UI.xml
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.Networking.xml
+D:\Dropbox\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.Analytics.xml
+D:\Dropbox\SWTOR\SWTOR Galaxy\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Assembly-UnityScript-firstpass.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Google.ProtocolBuffers.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.Analytics.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.Networking.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Unity.SerializationLogic.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Unity.UNetWeaver.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Unity.CecilTools.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.xml
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEditor.xml
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.UI.xml
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.Networking.xml
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\Temp\bin\Debug\UnityEngine.Analytics.xml
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\obj\Debug\Assembly-CSharp.csprojResolveAssemblyReference.cache
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\obj\Debug\Assembly-CSharp.dll
+C:\Users\Michael Voigt\Documents\SWTOR\SWTOR Galaxy\obj\Debug\Assembly-CSharp.pdb
