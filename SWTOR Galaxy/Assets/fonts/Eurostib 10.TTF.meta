@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 846f0ca1d2fb842fbb0d513680951f2d
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 34
+  forceTextureCase: -1
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Eurostile
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

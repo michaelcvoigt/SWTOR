@@ -1,0 +1,796 @@
+//public var _localized_strings : localized_strings;
+
+
+public var dataOtherX = new Array();
+public var dataOtherY = new Array();
+public var dataOtherZ = new Array();
+public var dataOtherSector = new Array();
+public var dataOtherName = new Array();
+public var dataOtherType = new Array();
+public var dataOtherRegion = new Array();
+public var dataOtherDesc = new Array();
+public var dataOtherVideo = new Array();
+public var dataOtherHeader = new Array();
+public var dataOtherASTROGRAPHICALREGION = new Array();
+public var dataOtherALLEGIANCE = new Array();
+public var dataOtherSTATUS = new Array();
+public var dataOtherTERRAIN = new Array();
+public var dataOtherKEYFACTS = new Array();
+public var dataOtherBloomIntensity = new Array();
+public var dataOtherBloomColorA = new Array();
+public var dataOtherBloomColorB = new Array();
+public var dataOtherBloomColorC = new Array();
+public var dataOtherBloomColorD = new Array();
+public var dataOtherRing = new Array();
+
+private var count : int;
+
+function Start()
+{
+//yield _localized_strings._www;
+
+	generateData();	
+	SendMessage ("CreatePlanets", count);
+
+}
+
+
+public function generateData()
+{
+//var _loc_count_index_start = 55;
+
+count = 0;
+
+
+dataOtherX[count] =  0.4; //0.5955093;
+dataOtherZ[count] =  0.45;  //0.6025576;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 1;	
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+dataOtherVideo[count] = "Alderaan";
+dataOtherBloomIntensity[count] = 0.4;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+count++;
+
+dataOtherX[count] = 0.7451411;	
+dataOtherZ[count] = 0.4529259;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 1;	
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+
+dataOtherVideo[count] = "Balmorra";
+dataOtherBloomIntensity[count] = 0.4;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+count++;
+
+dataOtherX[count] = 0.1511494;
+dataOtherY[count] =0.07299006;
+dataOtherZ[count] = -2.630395;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 4;
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+dataOtherVideo[count] = "Belsavis";
+dataOtherBloomIntensity[count] = 0.15;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+count++;
+
+dataOtherX[count] = 0.6136465;	
+dataOtherZ[count] = -0.1637385;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 1;
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+dataOtherVideo[count] = "Corellia";
+dataOtherBloomIntensity[count] = 0.4;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+count++;
+
+dataOtherX[count] = 0.12; // -0.003017966;
+dataOtherZ[count] = 0.6342976;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 1;
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+dataOtherVideo[count] = "Coruscant";
+dataOtherBloomIntensity[count] = 0.4;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+count++;
+
+dataOtherX[count] = 2.676752;
+dataOtherY[count] =0.09827447;
+dataOtherZ[count] = 2.48429;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 3;
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+dataOtherVideo[count] = "Dromund_Kaas";
+dataOtherBloomIntensity[count] = .1;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+count++;
+
+dataOtherX[count] = -0.33;
+dataOtherY[count] =-0.7748308;
+dataOtherZ[count] = -2.739218;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 4;
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+dataOtherVideo[count] = "Hoth";
+dataOtherBloomIntensity[count] = 0.2;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+count++;
+
+dataOtherX[count] = 2.749301;
+dataOtherY[count] =-0.2063827;
+dataOtherZ[count] = -0.2181502;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 2;
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+dataOtherVideo[count] = "Hutta";
+dataOtherBloomIntensity[count] = 2;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+count++;
+
+dataOtherX[count] = -1.762849;
+dataOtherZ[count] = 1.554413;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 0;	
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+dataOtherVideo[count] = "Ilum";
+dataOtherBloomIntensity[count] = 0.05;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = true;
+
+
+count++;
+
+dataOtherX[count] = 2.4319;
+dataOtherY[count] =-0.2331543;
+dataOtherZ[count] = 2.42081;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 3;
+
+/*
+dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+*/
+
+dataOtherVideo[count] = "Korriban";
+dataOtherBloomIntensity[count] = 0.4;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+/*
+count++;
+dataOtherName[count] = "Clouds of VonDoru";
+dataOtherX[count] = -1.65165;
+dataOtherZ[count] = 2.262699;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 0;
+
+count++;
+dataOtherName[count] = "The Impossible Sector";
+dataOtherX[count] = -2.152044;	
+dataOtherZ[count] = 2.412576;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 0;
+
+count++;
+dataOtherName[count] = "Zosha Advance";
+dataOtherX[count] = -2.002167;	
+dataOtherZ[count] = 1.854166;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 0;
+
+  count++;
+dataOtherName[count] = "Ascendancy Barrier";
+dataOtherX[count] = -2.3457;
+dataOtherY[count] = -0.1750057;
+dataOtherZ[count] = 1.727746;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 0;
+
+count++;
+dataOtherName[count] = "Bounty Hunter - The Madalorian Killer";
+dataOtherX[count] = -2.659085;
+dataOtherY[count] =0.2062867;
+dataOtherZ[count] = 0.8576416;
+dataOtherType[count] = 3;
+dataOtherRegion[count] = 0;
+
+count++;
+dataOtherName[count] = "Trooper - Inconspicuous Valor";
+dataOtherX[count] = -2.507923;
+dataOtherY[count] =-0.4582596;
+dataOtherZ[count] = -0.008775592;
+dataOtherType[count] = 3;
+dataOtherRegion[count] = 0;
+
+count++;
+dataOtherName[count] = "Skaross Fortification";
+dataOtherX[count] = 1.361806;
+dataOtherY[count] =0.7046515;
+dataOtherZ[count] = 2.588579;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 3;
+
+count++;
+dataOtherName[count] = "Agent - A New Epoch of Fear";
+dataOtherX[count] = 2.132637;
+dataOtherY[count] =-0.880149;
+dataOtherZ[count] = 2.670196;
+dataOtherType[count] = 3;
+dataOtherRegion[count] = 3;
+
+count++;
+dataOtherName[count] = "Makem Te Assault";
+dataOtherX[count] = 2.971482;
+dataOtherY[count] =0.543966;
+dataOtherZ[count] = 2.380001;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 3;
+
+count++;
+dataOtherName[count] = "Pakuuni Defense";
+dataOtherX[count] = 3.193662;
+dataOtherY[count] =-0.945245;
+dataOtherZ[count] = 1.912969;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 2;
+
+*/
+
+count++;
+
+dataOtherX[count] = 2.8;
+dataOtherY[count] =-0.2063829;
+dataOtherZ[count] = -0.1637385;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 2;
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+dataOtherVideo[count] = "Nar_Shaddaa";
+dataOtherBloomIntensity[count] = 2.0;
+dataOtherBloomColorA[count]  = Color(0.9,0.4,0.2,0.75);
+dataOtherBloomColorB[count]  = Color(0.5,0.2,0.2,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.2,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+count++;
+
+dataOtherX[count] = 0.1511482;
+dataOtherZ[count] = 1.459539;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 1;
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+dataOtherVideo[count] = "Ord_Mantell";
+dataOtherBloomIntensity[count] = 0.4;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+	
+count++;
+
+dataOtherX[count] = 2.776507;
+dataOtherY[count] =0.8717999;
+dataOtherZ[count] = 0.534543;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 2;
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+dataOtherVideo[count] = "Quesh";
+dataOtherBloomIntensity[count] = 2.5;
+dataOtherBloomColorA[count]  = Color(0.8,0.4,0.2,0.75);
+dataOtherBloomColorB[count]  = Color(0.8,0.8,0.2,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.2,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+count++;
+
+dataOtherX[count] = 0.9219794;
+dataOtherY[count] =-0.4746087;
+dataOtherZ[count] = 1.699858;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 3;	
+
+/*
+dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+*/
+
+dataOtherVideo[count] = "Taris";
+dataOtherBloomIntensity[count] = 0.4;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+count++;
+
+dataOtherX[count] = 2.558859;
+dataOtherY[count] =-0.821951;
+dataOtherZ[count] = -2.081746;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 4;
+
+/*
+dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+*/
+
+dataOtherVideo[count] = "Tatooine";
+dataOtherBloomIntensity[count] = 2.0;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+count++;
+
+dataOtherX[count] = 0.0241878;	
+dataOtherZ[count] = 0.3304999;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 1;	
+
+/*
+dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+*/
+
+dataOtherVideo[count] = "Tython";
+dataOtherBloomIntensity[count] = 0.4;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+count++;
+
+dataOtherX[count] = 2.971482;
+dataOtherY[count] =-0.9843758;
+dataOtherZ[count] = 2.03086;
+dataOtherType[count] = 1;
+dataOtherRegion[count] = 2;	
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+dataOtherVideo[count] = "Voss";
+dataOtherBloomIntensity[count] = 1.0;
+dataOtherBloomColorA[count]  = Color(0.4,0.4,0.8,0.75);
+dataOtherBloomColorB[count]  = Color(0.4,0.8,0.8,0.75);
+dataOtherBloomColorC[count]  = Color(0.8,0.4,0.8,0.75);
+dataOtherBloomColorD[count]  = Color(0.8,0.4,0.0,0.75);
+dataOtherRing[count]  = false;
+
+/*
+count++;
+dataOtherName[count] = "Jabiim Escort";
+dataOtherX[count] = 3.04403;
+dataOtherY[count] =-0.8678101;
+dataOtherZ[count] = 1.482211;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 2;
+
+count++;
+dataOtherName[count] = "Saleucami Fleet Action";
+dataOtherX[count] = 2.953344;
+dataOtherY[count] =0.3583769;
+dataOtherZ[count] = 1.10133;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 2;
+
+count++;
+dataOtherName[count] = "Warrior - A Treat Leveleds";
+dataOtherX[count] = 2.404695;
+dataOtherY[count] =0.812331;
+dataOtherZ[count] = 2.035394;
+dataOtherType[count] = 3;
+dataOtherRegion[count] = 2;	
+
+count++;
+dataOtherName[count] = "Nez Peron Sweep";
+dataOtherX[count] = 1.330066;
+dataOtherY[count] =-0.4861919;
+dataOtherZ[count] = 2.157821;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 3;	
+
+count++;
+dataOtherName[count] = "Hydian Way Blockade";
+dataOtherX[count] = 0.7814162;
+dataOtherY[count] =0.7839898;
+dataOtherZ[count] = 1.935641;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 3;	
+
+count++;
+dataOtherName[count] = "Archenar Interception";
+dataOtherX[count] = 2.563395;
+dataOtherY[count] =-0.732724;
+dataOtherZ[count] = 0.4755971;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 2;
+
+count++;
+dataOtherName[count] = "Smuggler - The Endless Abyss";
+dataOtherX[count] = 3.393171;
+dataOtherY[count] =0.6803343;
+dataOtherZ[count] = 0.4030485;
+dataOtherType[count] = 3;
+dataOtherRegion[count] = 2;
+
+count++;
+dataOtherName[count] = "Balosar Outpost";
+dataOtherX[count] = 2.622341;
+dataOtherY[count] =0.1117305;
+dataOtherZ[count] = -0.3179045;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 2;
+
+
+count++;
+dataOtherName[count] = "Trooper - Public Relations";
+dataOtherX[count] = 2.255063;
+dataOtherY[count] =0.1998744;
+dataOtherZ[count] = -1.043392;
+dataOtherType[count] = 3;
+dataOtherRegion[count] = 2;
+
+count++;
+dataOtherName[count] = "Syvris Evacuation";
+dataOtherX[count] = 3.361431;
+dataOtherY[count] =0.6858242;
+dataOtherZ[count] = -0.707854;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 2;
+
+count++;
+dataOtherName[count] = "Warrior - The Plan is Working";
+dataOtherX[count] = 3.016824;
+dataOtherY[count] =-0.7003418;
+dataOtherZ[count] = -0.9028286;
+dataOtherType[count] = 3;
+dataOtherRegion[count] = 4;
+
+count++;
+dataOtherName[count] = "Ezran Outpost";
+dataOtherX[count] = 2.490845;
+dataOtherY[count] =0.6748769;
+dataOtherZ[count] = -1.596576;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 4;
+
+count++;
+dataOtherName[count] = "Trooper - The Shadow Fist";
+dataOtherX[count] = 1.656535;
+dataOtherY[count] = 0.8264155;
+dataOtherZ[count] = -1.288244;
+dataOtherType[count] = 3;
+dataOtherRegion[count] = 4;
+
+count++;
+dataOtherName[count] = "Llanic Station Strike";
+dataOtherX[count] = 2.096361;
+dataOtherY[count] =0.6343718;
+dataOtherZ[count] = -2.090815;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 4;
+
+count++;
+dataOtherName[count] = "Drexel Fortification";
+dataOtherX[count] = 1.475163;
+dataOtherY[count] =-0.9662575;
+dataOtherZ[count] = -2.707479;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 4;
+
+count++;
+dataOtherName[count] = "Sullust Defense";
+dataOtherX[count] = 0.6725924;
+dataOtherY[count] =-0.3227423;
+dataOtherZ[count] = -2.249515;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 4;
+
+count++;
+dataOtherName[count] = "Smuggler - Distressed";
+dataOtherX[count] = -0.3975004;
+dataOtherY[count] =-0.3216469;
+dataOtherZ[count] = -2.176966;
+dataOtherType[count] = 3;
+dataOtherRegion[count] = 4;
+
+
+count++;
+dataOtherName[count] = "Mugaar Ice Field";
+dataOtherX[count] = -0.2478686;
+dataOtherY[count] =-0.1163532;
+dataOtherZ[count] = -2.784561;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 4;
+
+count++;
+dataOtherName[count] = "Kovor Ice Field";
+dataOtherX[count] = -1.018699;
+dataOtherY[count] =0.1183084;
+dataOtherZ[count] = -2.607723;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 4;
+
+count++;
+dataOtherName[count] = "Consular - Vivicar Awaits";
+dataOtherX[count] = -1.998107;
+dataOtherY[count] =-0.3988019;
+dataOtherZ[count] = -2.104416;
+dataOtherType[count] = 3;
+dataOtherRegion[count] = 4;
+
+count++;
+dataOtherName[count] = "Consular - Distress Call";
+dataOtherX[count] = -2.669183;
+dataOtherY[count] =0.8287032;
+dataOtherZ[count] = -1.592041;
+dataOtherType[count] = 3;
+dataOtherRegion[count] = 4;
+
+count++;
+dataOtherName[count] = "Polith Minefield";
+dataOtherX[count] = 0.2645057;
+dataOtherY[count] =0.5821393;
+dataOtherZ[count] = -1.143147;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 1;
+
+
+count++;
+dataOtherName[count] = "Fondor Escort";
+dataOtherX[count] = 0.1511483;
+dataOtherY[count] =0.860095;
+dataOtherZ[count] = -0.8982944;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 1;
+
+
+count++;
+dataOtherName[count] = "Cartell Listening Station";
+dataOtherX[count] = 0.3914659;
+dataOtherY[count] =-0.5015831;
+dataOtherZ[count] = -0.417659;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 1;
+
+count++;
+dataOtherName[count] = "Sarapin Assault";
+dataOtherX[count] = 0.4458775;
+dataOtherZ[count] = 0.2307453;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 1;
+
+count++;
+dataOtherName[count] = "Javaal Fleet Action";
+dataOtherX[count] = 0.05592787;	
+dataOtherZ[count] = 0.7793949;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 1;
+
+count++;
+dataOtherName[count] = "Taspan Ambush";
+dataOtherX[count] = 0.4640146;	
+dataOtherZ[count] = 1.151207;
+dataOtherType[count] = 2;
+dataOtherRegion[count] = 1;
+
+count++;
+dataOtherName[count] = "Kinght - Uphrades";
+dataOtherX[count] = 0.6227149;	
+dataOtherZ[count] = 1.19655;
+dataOtherType[count] = 3;
+dataOtherRegion[count] = 1;
+
+count++;
+dataOtherName[count] = "Knight - New Intelligence";
+dataOtherX[count] = 0.1964912;
+dataOtherZ[count] = 1.477676;
+dataOtherType[count] = 3;
+dataOtherRegion[count] = 1;
+dataOtherHeader[count] = "";
+dataOtherDesc[count] = "";
+dataOtherASTROGRAPHICALREGION[count] = "";
+dataOtherALLEGIANCE[count] = "";
+dataOtherSTATUS[count] = "";
+dataOtherTERRAIN[count] = "";
+dataOtherKEYFACTS[count] = "";
+dataOtherVideo[count] = "";
+
+*/
+
+dataOtherY[0] =-0.004358977;dataOtherY[1] =-0.01157945;dataOtherY[2] =0.04307613;dataOtherY[3] =-0.0382501;dataOtherY[4] =0.0297983;dataOtherY[5] =0.03554294;dataOtherY[6] =0.04907966;dataOtherY[7] =-0.04050002;dataOtherY[8] =-0.02208433;dataOtherY[9] =0.02337619;dataOtherY[10] =-0.007329684;dataOtherY[11] =0.0002430975;dataOtherY[12] =-0.03571353;dataOtherY[13] =-0.01376912;dataOtherY[14] =-0.04177586;dataOtherY[15] =0.02441372;dataOtherY[16] =0.0157021;dataOtherY[17] =0.04246518;dataOtherY[18] =-0.04773932;dataOtherY[19] =-0.01372239;dataOtherY[20] =-0.00633008;dataOtherY[21] =-0.03829474;dataOtherY[22] =0.02416363;dataOtherY[23] =-0.03139651;dataOtherY[24] =0.02004639;dataOtherY[25] =-0.04010937;dataOtherY[26] =0.01136964;dataOtherY[27] =-0.04934934;dataOtherY[28] =-0.02692387;dataOtherY[29] =-0.02692386;dataOtherY[30] =-0.03266579;dataOtherY[31] =-0.02117922;dataOtherY[32] =-0.04521615;dataOtherY[33] =-0.03026247;dataOtherY[34] =0.002717681;dataOtherY[35] =-0.005186968;dataOtherY[36] =0.03022262;dataOtherY[37] =0.01575919;dataOtherY[38] =0.03240472;dataOtherY[39] =-0.04314944;dataOtherY[40] =0.04072794;dataOtherY[41] =-0.00289344;dataOtherY[42] =-0.04567325;dataOtherY[43] =-0.0256047;dataOtherY[44] =0.01695964;dataOtherY[45] =-0.04599816;dataOtherY[46] =-0.0120801;dataOtherY[47] =0.04895828;dataOtherY[48] =0.04477565;dataOtherY[49] =0.006833382;dataOtherY[50] =-0.01797884;dataOtherY[51] =0.03889224;dataOtherY[52] =-0.001726717;dataOtherY[53] =0.04382838;dataOtherY[54] =0.02474274;dataOtherY[55] =-0.0008136332;dataOtherY[56] =0.01787026;dataOtherY[57] =-0.001857717;dataOtherY[58] =-0.00724731;dataOtherY[59] =0.03893868;dataOtherY[60] =-0.01157945;
+
+
+}

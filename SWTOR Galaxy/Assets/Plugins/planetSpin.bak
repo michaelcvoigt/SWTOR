@@ -1,0 +1,54 @@
+public var object: GameObject;
+public var corona : GameObject;
+public var ring : GameObject;
+public var nameText : TextMesh;
+public var nameGameObject : GameObject;
+
+private var offset:float;
+private var offset2:float;
+private var diffuseTexture : Texture;
+private var cloudTexture : Texture;
+private var coronaTexture : Texture;
+private var ringTexture : Texture;
+
+function setTextures(_name: String, _ring: boolean)
+{
+
+	var imageFile : String = _name + "_diffuse";	
+	diffuseTexture = Resources.Load(imageFile);	
+	object.GetComponent.<Renderer>().materials[0].mainTexture = diffuseTexture;	
+	imageFile = _name + "_cloud";
+	cloudTexture = Resources.Load(imageFile);	
+	object.GetComponent.<Renderer>().materials[1].mainTexture = cloudTexture;
+	
+	imageFile = _name + "_corona";
+	coronaTexture= Resources.Load(imageFile);	
+	corona.GetComponent.<Renderer>().materials[0].mainTexture = coronaTexture;
+	
+	ring.SetActiveRecursively(_ring);
+	
+	Resources.UnloadUnusedAssets();	
+}
+
+function setName ( _name: String ) 
+{
+	nameText.text = _name;
+}
+
+function activateZoomed ( _active : boolean )
+{
+
+	nameGameObject.SetActiveRecursively(_active);
+	
+}
+
+function Update () 
+{ 
+
+	offset = offset + ( Time.deltaTime *.008) ;
+	offset2 = offset2 + ( Time.deltaTime *.01) ;
+	
+	object.GetComponent.<Renderer>().materials[0].mainTextureOffset = Vector2 (offset,0);
+   	object.GetComponent.<Renderer>().materials[1].mainTextureOffset = Vector2 (offset2,0);
+	
+} 

@@ -1,0 +1,43 @@
+# Blender MTL File: 'StarkillerBase_BlenderRender.blend'
+# Material Count: 4
+
+newmtl Red
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.286273 0.231676
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 0
+
+newmtl main
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd main_tex.png
+map_Ke main_tex_emission.png
+
+newmtl panels
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd panels_tex.png
+map_Ke panels_tex_emission.png
+
+newmtl parts
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd parts_tex.png

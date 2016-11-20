@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/vrGalaxy_rift.unity
+  isLoaded: 1
+  isActive: 1
