@@ -1,23 +1,24 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-
 //public var _localized_strings : localized_strings;
+using System.Collections;
 
-public class data_en : MonoBehaviour {
+public class data_en : MonoBehaviour
+{
 
 	public GalaxyManager _galaxyManager;
 
-public float[] dataOtherX;
-public float[] dataOtherY;
-public float[] dataOtherZ;
+	public float[] dataOtherX;
+	public float[] dataOtherY;
+	public float[] dataOtherZ;
 
 
-//public Array dataOtherSector = new Array();
+	//public Array dataOtherSector = new Array();
 
 
 	//public Array dataOtherName = new Array();
-	public int[]  dataOtherType;
+	public int[] dataOtherType;
 	public int[] dataOtherRegion;
 	public string[] dataOtherVideo;
 	/*
@@ -32,9 +33,9 @@ public float[] dataOtherZ;
 
 	*/
 
-public float[] dataOtherBloomIntensity;
+	public float[] dataOtherBloomIntensity;
 
-/*
+	/*
 public List<Color> dataOtherBloomColorA;
 public  List<Color> dataOtherBloomColorB;
 public  List<Color> dataOtherBloomColorC;
@@ -44,31 +45,28 @@ public  List<Color> dataOtherBloomColorD;
 
 	private int count;
 
+	void Start ()
+	{
 
-
-void Start ()
-{
 //yield _localized_strings._www;
 
+		generateData ();	
+		_galaxyManager.CreatePlanets (count);
+
+	}
 
 
-	generateData();	
-	_galaxyManager.CreatePlanets(count);
-
-}
-
-
-void generateData()
-{
+	void generateData ()
+	{
 //var _loc_count_index_start = 55f;
 
-count = 0;
+		count = 0;
 
 
-dataOtherX[count] =  0.4f; //0.5955093f;
-dataOtherZ[count] =  0.45f;  //0.6025576f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 1;	
+		dataOtherX [count] = 0.4f; //0.5955093f;
+		dataOtherZ [count] = 0.45f;  //0.6025576f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 1;	
 
 //dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -79,46 +77,20 @@ dataOtherRegion[count] = 1;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-dataOtherVideo[count] = "Alderaan";
-dataOtherBloomIntensity[count] = 0.4f;
+		dataOtherVideo [count] = "Alderaan";
+		dataOtherBloomIntensity [count] = 0.4f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector5(5f;0.4f,0.8f,0.8f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 
-count++;
+		count++;
 
-dataOtherX[count] = 0.7451411f;	
-dataOtherZ[count] = 0.4529259f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 1;	
-
-//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-
-
-dataOtherVideo[count] = "Balmorra";
-dataOtherBloomIntensity[count] = 0.4f;
-//dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
-//dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
-//dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
-//dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
-
-count++;
-
-dataOtherX[count] = 0.1511494f;
-dataOtherY[count] =0.07299006f;
-dataOtherZ[count] = -2.630395f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 4;
+		dataOtherX [count] = 0.7451411f;	
+		dataOtherZ [count] = 0.4529259f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 1;	
 
 //dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -129,20 +101,22 @@ dataOtherRegion[count] = 4;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-dataOtherVideo[count] = "Belsavis";
-dataOtherBloomIntensity[count] = 0.15f;
+
+		dataOtherVideo [count] = "Balmorra";
+		dataOtherBloomIntensity [count] = 0.4f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 
-count++;
+		count++;
 
-dataOtherX[count] = 0.6136465f;	
-dataOtherZ[count] = -0.1637385f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 1;
+		dataOtherX [count] = 0.1511494f;
+		dataOtherY [count] = 0.07299006f;
+		dataOtherZ [count] = -2.630395f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 4;
 
 //dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -153,20 +127,20 @@ dataOtherRegion[count] = 1;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-dataOtherVideo[count] = "Corellia";
-dataOtherBloomIntensity[count] = 0.4f;
+		dataOtherVideo [count] = "Belsavis";
+		dataOtherBloomIntensity [count] = 0.15f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 
-count++;
+		count++;
 
-dataOtherX[count] = 0.12f; // -0.003017966f;
-dataOtherZ[count] = 0.6342976f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 1;
+		dataOtherX [count] = 0.6136465f;	
+		dataOtherZ [count] = -0.1637385f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 1;
 
 //dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -177,21 +151,20 @@ dataOtherRegion[count] = 1;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-dataOtherVideo[count] = "Coruscant";
-dataOtherBloomIntensity[count] = 0.4f;
+		dataOtherVideo [count] = "Corellia";
+		dataOtherBloomIntensity [count] = 0.4f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 
-count++;
+		count++;
 
-dataOtherX[count] = 2.676752f;
-dataOtherY[count] =0.09827447f;
-dataOtherZ[count] = 2.48429f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 3;
+		dataOtherX [count] = 0.12f; // -0.003017966f;
+		dataOtherZ [count] = 0.6342976f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 1;
 
 //dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -202,21 +175,21 @@ dataOtherRegion[count] = 3;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-dataOtherVideo[count] = "Dromund_Kaas";
-dataOtherBloomIntensity[count] = 0.1f;
+		dataOtherVideo [count] = "Coruscant";
+		dataOtherBloomIntensity [count] = 0.4f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 
-count++;
+		count++;
 
-dataOtherX[count] = -0.33f;
-dataOtherY[count] =-0.7748308f;
-dataOtherZ[count] = -2.739218f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 4;
+		dataOtherX [count] = 2.676752f;
+		dataOtherY [count] = 0.09827447f;
+		dataOtherZ [count] = 2.48429f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 3;
 
 //dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -227,21 +200,21 @@ dataOtherRegion[count] = 4;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-dataOtherVideo[count] = "Hoth";
-dataOtherBloomIntensity[count] = 0.2f;
+		dataOtherVideo [count] = "Dromund_Kaas";
+		dataOtherBloomIntensity [count] = 0.1f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 
-count++;
+		count++;
 
-dataOtherX[count] = 2.749301f;
-dataOtherY[count] =-0.2063827f;
-dataOtherZ[count] = -0.2181502f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 2;
+		dataOtherX [count] = -0.33f;
+		dataOtherY [count] = -0.7748308f;
+		dataOtherZ [count] = -2.739218f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 4;
 
 //dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -252,20 +225,21 @@ dataOtherRegion[count] = 2;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-dataOtherVideo[count] = "Hutta";
-dataOtherBloomIntensity[count] = 2f;
+		dataOtherVideo [count] = "Hoth";
+		dataOtherBloomIntensity [count] = 0.2f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 
-count++;
+		count++;
 
-dataOtherX[count] = -1.762849f;
-dataOtherZ[count] = 1.554413f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 0;	
+		dataOtherX [count] = 2.749301f;
+		dataOtherY [count] = -0.2063827f;
+		dataOtherZ [count] = -0.2181502f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 2;
 
 //dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -276,22 +250,46 @@ dataOtherRegion[count] = 0;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-dataOtherVideo[count] = "Ilum";
-dataOtherBloomIntensity[count] = 0.05f;
+		dataOtherVideo [count] = "Hutta";
+		dataOtherBloomIntensity [count] = 2f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = true;
+		dataOtherRing [count] = false;
+
+		count++;
+
+		dataOtherX [count] = -1.762849f;
+		dataOtherZ [count] = 1.554413f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 0;	
+
+//dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+//dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+
+		dataOtherVideo [count] = "Ilum";
+		dataOtherBloomIntensity [count] = 0.05f;
+//dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
+//dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
+//dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
+//dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
+		dataOtherRing [count] = true;
 
 
-count++;
+		count++;
 
-dataOtherX[count] = 2.4319f;
-dataOtherY[count] =-0.2331543f;
-dataOtherZ[count] = 2.42081f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 3;
+		dataOtherX [count] = 2.4319f;
+		dataOtherY [count] = -0.2331543f;
+		dataOtherZ [count] = 2.42081f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 3;
 
 /*
 dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -304,13 +302,13 @@ dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc
 dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 */
 
-dataOtherVideo[count] = "Korriban";
-dataOtherBloomIntensity[count] = 0.4f;
+		dataOtherVideo [count] = "Korriban";
+		dataOtherBloomIntensity [count] = 0.4f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 
 /*
 count++;
@@ -392,13 +390,13 @@ dataOtherRegion[count] = 2f;
 
 */
 
-count++;
+		count++;
 
-dataOtherX[count] = 2.8f;
-dataOtherY[count] =-0.2063829f;
-dataOtherZ[count] = -0.1637385f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 2;
+		dataOtherX [count] = 2.8f;
+		dataOtherY [count] = -0.2063829f;
+		dataOtherZ [count] = -0.1637385f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 2;
 
 //dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -409,20 +407,20 @@ dataOtherRegion[count] = 2;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-dataOtherVideo[count] = "Nar_Shaddaa";
-dataOtherBloomIntensity[count] = 2.0f;
+		dataOtherVideo [count] = "Nar_Shaddaa";
+		dataOtherBloomIntensity [count] = 2.0f;
 //dataOtherBloomColorA[count]  = Vector4(0.9,0.4f,0.2f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.5,0.2f,0.2f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.2f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 
-count++;
+		count++;
 
-dataOtherX[count] = 0.1511482f;
-dataOtherZ[count] = 1.459539f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 1;
+		dataOtherX [count] = 0.1511482f;
+		dataOtherZ [count] = 1.459539f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 1;
 
 //dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -433,21 +431,21 @@ dataOtherRegion[count] = 1;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-dataOtherVideo[count] = "Ord_Mantell";
-dataOtherBloomIntensity[count] = 0.4f;
+		dataOtherVideo [count] = "Ord_Mantell";
+		dataOtherBloomIntensity [count] = 0.4f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 	
-count++;
+		count++;
 
-dataOtherX[count] = 2.776507f;
-dataOtherY[count] =0.8717999f;
-dataOtherZ[count] = 0.534543f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 2;
+		dataOtherX [count] = 2.776507f;
+		dataOtherY [count] = 0.8717999f;
+		dataOtherZ [count] = 0.534543f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 2;
 
 //dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -458,48 +456,21 @@ dataOtherRegion[count] = 2;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-dataOtherVideo[count] = "Quesh";
-dataOtherBloomIntensity[count] = 2.5f;
+		dataOtherVideo [count] = "Quesh";
+		dataOtherBloomIntensity [count] = 2.5f;
 //dataOtherBloomColorA[count]  = Vector4(0.8f,0.4f,0.2f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.8f,0.8f,0.2f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.2f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 
-count++;
+		count++;
 
-dataOtherX[count] = 0.9219794f;
-dataOtherY[count] =-0.4746087f;
-dataOtherZ[count] = 1.699858f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 3;	
-
-/*
-dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
-*/
-
-dataOtherVideo[count] = "Taris";
-dataOtherBloomIntensity[count] = 0.4f;
-//dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
-//dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
-//dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
-//dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
-
-count++;
-
-dataOtherX[count] = 2.558859f;
-dataOtherY[count] =-0.821951f;
-dataOtherZ[count] = -2.081746f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 4;
+		dataOtherX [count] = 0.9219794f;
+		dataOtherY [count] = -0.4746087f;
+		dataOtherZ [count] = 1.699858f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 3;	
 
 /*
 dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -512,20 +483,21 @@ dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc
 dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 */
 
-dataOtherVideo[count] = "Tatooine";
-dataOtherBloomIntensity[count] = 2.0f;
+		dataOtherVideo [count] = "Taris";
+		dataOtherBloomIntensity [count] = 0.4f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 
-count++;
+		count++;
 
-dataOtherX[count] = 0.0241878f;	
-dataOtherZ[count] = 0.3304999f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 1;	
+		dataOtherX [count] = 2.558859f;
+		dataOtherY [count] = -0.821951f;
+		dataOtherZ [count] = -2.081746f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 4;
 
 /*
 dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -538,21 +510,47 @@ dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc
 dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 */
 
-dataOtherVideo[count] = "Tython";
-dataOtherBloomIntensity[count] = 0.4f;
+		dataOtherVideo [count] = "Tatooine";
+		dataOtherBloomIntensity [count] = 2.0f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 
-count++;
+		count++;
 
-dataOtherX[count] = 2.971482f;
-dataOtherY[count] =-0.9843758f;
-dataOtherZ[count] = 2.03086f;
-dataOtherType[count] = 1;
-dataOtherRegion[count] = 2;	
+		dataOtherX [count] = 0.0241878f;	
+		dataOtherZ [count] = 0.3304999f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 1;	
+
+/*
+dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherDesc[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherASTROGRAPHICALREGION[count] =_localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherALLEGIANCE[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherSTATUS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
+*/
+
+		dataOtherVideo [count] = "Tython";
+		dataOtherBloomIntensity [count] = 0.4f;
+//dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
+//dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
+//dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
+//dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
+		dataOtherRing [count] = false;
+
+		count++;
+
+		dataOtherX [count] = 2.971482f;
+		dataOtherY [count] = -0.9843758f;
+		dataOtherZ [count] = 2.03086f;
+		dataOtherType [count] = 1;
+		dataOtherRegion [count] = 2;	
 
 //dataOtherName[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherHeader[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
@@ -563,13 +561,13 @@ dataOtherRegion[count] = 2;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-dataOtherVideo[count] = "Voss";
-dataOtherBloomIntensity[count] = 1.0f;
+		dataOtherVideo [count] = "Voss";
+		dataOtherBloomIntensity [count] = 1.0f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
 //dataOtherBloomColorC[count]  = Vector4(0.8f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorD[count]  = Vector4(0.8f,0.4f,0.0F,0.75f);
-dataOtherRing[count]  = false;
+		dataOtherRing [count] = false;
 
 /*
 count++;
@@ -816,5 +814,5 @@ dataOtherVideo[count] = "";
 //dataOtherY[0] =-0.004358977f;dataOtherY[1] =-0.01157945f;dataOtherY[2] =0.04307613f;dataOtherY[3] =-0.0382501f;dataOtherY[4] =0.0297983f;dataOtherY[5] =0.03554294f;dataOtherY[6] =0.04907966f;dataOtherY[7] =-0.04050002f;dataOtherY[8] =-0.02208433f;dataOtherY[9] =0.02337619f;dataOtherY[10] =-0.007329684f;dataOtherY[11] =0.0002430975f;dataOtherY[12] =-0.03571353f;dataOtherY[13] =-0.01376912f;dataOtherY[14] =-0.04177586f;dataOtherY[15] =0.02441372f;dataOtherY[16] =0.0157021f;dataOtherY[17] =0.04246518f;dataOtherY[18] =-0.04773932f;dataOtherY[19] =-0.01372239f;dataOtherY[20] =-0.00633008f;dataOtherY[21] =-0.03829474f;dataOtherY[22] =0.02416363f;dataOtherY[23] =-0.03139651f;dataOtherY[24] =0.02004639f;dataOtherY[25] =-0.04010937f;dataOtherY[26] =0.01136964f;dataOtherY[27] =-0.04934934f;dataOtherY[28] =-0.02692387f;dataOtherY[29] =-0.02692386f;dataOtherY[30] =-0.03266579f;dataOtherY[31] =-0.02117922f;dataOtherY[32] =-0.04521615f;dataOtherY[33] =-0.03026247f;dataOtherY[34] =0.002717681f;dataOtherY[35] =-0.005186968f;dataOtherY[36] =0.03022262f;dataOtherY[37] =0.01575919f;dataOtherY[38] =0.03240472f;dataOtherY[39] =-0.04314944f;dataOtherY[40] =0.04072794f;dataOtherY[41] =-0.00289344f;dataOtherY[42] =-0.04567325f;dataOtherY[43] =-0.0256047f;dataOtherY[44] =0.01695964f;dataOtherY[45] =-0.04599816f;dataOtherY[46] =-0.0120801f;dataOtherY[47] =0.04895828f;dataOtherY[48] =0.04477565f;dataOtherY[49] =0.006833382f;dataOtherY[50] =-0.01797884f;dataOtherY[51] =0.03889224f;dataOtherY[52] =-0.001726717f;dataOtherY[53] =0.04382838f;dataOtherY[54] =0.02474274f;dataOtherY[55] =-0.0008136332f;dataOtherY[56] =0.01787026f;dataOtherY[57] =-0.001857717f;dataOtherY[58] =-0.00724731f;dataOtherY[59] =0.03893868f;dataOtherY[60] =-0.01157945f;
 
 
-}
+	}
 }

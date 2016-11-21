@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-
 using Cubiquity;
 
 //[ExecuteInEditMode]
@@ -21,14 +20,14 @@ public class ColoredCubeMazeFromImage : MonoBehaviour
 	{
 
 		if (imageName != null) {
-			Load ();
+			//Load ();
 		}
 	}
 
 	public void Load ()
 	{
 
-		print( imageName );
+		print( "Load  called :  " + imageName );
 
 		Texture2D mazeTexture2D = Resources.Load("Images/"+imageName + "Maze") as Texture2D;
 		Texture2D colorTexture2D = Resources.Load("Images/"+imageName+ "Color") as Texture2D;
@@ -36,7 +35,7 @@ public class ColoredCubeMazeFromImage : MonoBehaviour
 		// The size of the volume we will generate. Note that our source image cn be considered
 		// to have x and y axes,  but we map these to x and z because in Unity3D the y axis is up.
 		int width = mazeTexture2D.width;
-		int height = 100;
+		int height = 50;
 		int depth = mazeTexture2D.height;
 		
 		// Start with some empty volume data and we'll write our maze into this.
@@ -60,11 +59,12 @@ public class ColoredCubeMazeFromImage : MonoBehaviour
 		//QuantizedColor white = new QuantizedColor(255, 255, 255, 255);
 		
 		// Iterate over every pixel of our maze image.
-		for (int z = 0; z < depth; z++) {
-			for (int x = 0; x < width; x++) {
+		for (int z = 0; z < depth; ++z) {
+			for (int x = 0; x < width; ++x) {
 				// The exact logic here isn't important for the purpose of the example, but basically we decide which
 				// tile a voxel is part of based on it's position. You can tweak the values to get an dea of what they do.
 				//QuantizedColor tileColor;
+
 				int tileSize = 4;
 				int tileXOffset = 2;
 				int tileZOffset = 2;
@@ -77,7 +77,7 @@ public class ColoredCubeMazeFromImage : MonoBehaviour
 	
 				QuantizedColor voxColor = new QuantizedColor ((byte)(colorTexture2D.GetPixel (x, z).r * 255), (byte)(colorTexture2D.GetPixel (x, z).g * 255), (byte)(colorTexture2D.GetPixel (x, z).b * 255), 255);
 
-				int currentHeight = (byte)(mazeTexture2D.GetPixel (x, z).r * 100);
+				int currentHeight = (byte)(mazeTexture2D.GetPixel (x, z).r * height);
 
 				// Iterate over every voxel in the current column.
 				for (int y = currentHeight - 1; y > 0; y--) {

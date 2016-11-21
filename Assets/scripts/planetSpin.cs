@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class planetSpin : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class planetSpin : MonoBehaviour
 	private Texture ringTexture;
 
 
-	public void Start ()
+	public void Init ()
 	{
 		c0 = StartCoroutine(nothing());
 		c1 = StartCoroutine(nothing());
@@ -42,6 +43,8 @@ public class planetSpin : MonoBehaviour
 			MyCubeGameobject.SetActive (false);
 			CubeOrigScale = MyCube.transform.localScale;
 
+			MyCube.Load();
+
 			if (GameObjectToHideWhenZoomed.Length > 0) {
 
 				GameObjectToHideOrigScale = new Vector3[GameObjectToHideWhenZoomed.Length];
@@ -50,6 +53,7 @@ public class planetSpin : MonoBehaviour
 					GameObjectToHideOrigScale [i] = GameObjectToHideWhenZoomed [i].transform.localScale;
 				}
 			}
+
 		}
 	}
 
@@ -147,7 +151,7 @@ public class planetSpin : MonoBehaviour
 		if (active) {
 
 
-			MyCube.Load ();
+			//MyCube.Load ();
 
 			MyCubeGameobject.transform.localScale = scale0;
 			c0 = StartCoroutine (scale (scale0, CubeOrigScale, lerpTime, MyCubeGameobject,false));

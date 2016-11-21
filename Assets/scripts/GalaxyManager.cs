@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using VR = UnityEngine.VR;
 using UnityStandardAssets.ImageEffects;
 using VacuumShaders.CurvedWorld;
+using System.Collections;
 
 public class GalaxyManager : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class GalaxyManager : MonoBehaviour
 	public GameObject messageCanvas;
 	public MovementController activateOnTouch;
 	public GameObject TutorialOverlay;
+	public GameObject Loading;
 	public GameObject Cursors;
 	public bool holding = false;
 	public bool zoomed = false;
@@ -57,6 +59,7 @@ public class GalaxyManager : MonoBehaviour
 
 	public void CreatePlanets (int _count)
 	{
+		
 
 		for (var i = 0; i < _count; ++i) {
 
@@ -86,11 +89,33 @@ public class GalaxyManager : MonoBehaviour
 
 			//activateOnTouch.resolveIn (instance);
 
-		}
-		theUniverse.gameObject.SetActive (false);
+			_planetSpin.Init ();
 
+	
+	  }
+
+
+
+			targetSpin[] targets = theUniverse.GetComponentsInChildren<targetSpin> ();
+
+			print( targets.Length );
+
+			for (int j = 0; j < targets.Length; ++j) {
+
+					print( j );
+
+					targets [j].Init ();
+
+			}
+
+
+		theUniverse.gameObject.SetActive (false);
+	
+		Loading.SetActive (false);
 
 	}
+
+
 
 	void closeIntro ()
 	{
@@ -151,7 +176,7 @@ public class GalaxyManager : MonoBehaviour
 
 		UpdatePointer ();
 
-		if ( (Input.GetButtonDown ("Fire1") || Input.GetMouseButtonDown (0)) && !animating ) {
+		if ((Input.GetButtonDown ("Fire1") || Input.GetMouseButtonDown (0)) && !animating) {
 
 			inputTrue = true;
 		}
@@ -174,7 +199,7 @@ public class GalaxyManager : MonoBehaviour
 
 
 		// zoom further
-		if (inputTrue && holding && !zoomed ) {
+		if (inputTrue && holding && !zoomed) {
 
 			zoom ();
 			UpdatePointer ();
@@ -319,8 +344,8 @@ public class GalaxyManager : MonoBehaviour
 			activateOnTouch.Release (GvrMain, heldOrigPosition, heldObject);
 			heldObject.SendMessage ("activateZoomed", false);
 
-			if(zoomed)
-			heldObject.SendMessage ("activateZoomIn", false);
+			if (zoomed)
+				heldObject.SendMessage ("activateZoomIn", false);
 
 		}
 
