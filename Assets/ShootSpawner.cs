@@ -21,7 +21,7 @@ public class ShootSpawner : MonoBehaviour {
 
 		var rot = InputTracking.GetLocalPosition (VRNode.Head);
 
-		if (Physics.Raycast( rot   , transform.forward, out hit, 10000))
+		if (Physics.Raycast( rot , transform.forward, out hit, 10000))
 		{
 			hitObject = hit.collider.gameObject;
 
@@ -31,7 +31,6 @@ public class ShootSpawner : MonoBehaviour {
 
 
 	public GameObject GetCurrentGameObject() {
-
 
 
 		if (hitObject != null ) {

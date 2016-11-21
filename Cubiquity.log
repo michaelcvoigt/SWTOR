@@ -1,82 +1,221 @@
 ********************************************************************************
 *                             Initializing Cubiquity                           *
 ********************************************************************************
-[04:09:02, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/3EB3CBFD.vdb'
-[04:09:51, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:09:51, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6A9844AE.vdb'
-[04:11:37, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:11:38, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6A9844AE.vdb'
-[04:12:56, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/7CA2BF50.vdb'
-[04:13:10, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:13:11, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/76A8B48E.vdb'
-[04:13:14, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:13:17, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/274BBE02.vdb'
-[04:13:18, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:13:21, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/274BBE02.vdb'
-[04:13:25, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/50B280CB.vdb'
-[04:13:55, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:13:55, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/50B280CB.vdb'
-[04:15:26, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/38CF6229.vdb'
-[04:15:36, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:15:36, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/38CF6229.vdb'
-[04:15:55, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/164E2EAC.vdb'
-[04:16:39, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:16:42, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/170EBFCE.vdb'
-[04:16:42, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:16:43, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/170EBFCE.vdb'
-[04:17:36, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/5A85008D.vdb'
-[04:17:36, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:17:39, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/159BEC1E.vdb'
-[04:17:40, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:17:40, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/159BEC1E.vdb'
-[04:18:03, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/4B3C7CEA.vdb'
-[04:18:11, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:18:14, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6E575070.vdb'
-[04:18:15, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:18:15, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6E575070.vdb'
-[04:18:29, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6400D3D0.vdb'
-[04:23:16, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:23:17, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/51BAB399.vdb'
-[04:23:17, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:23:18, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/51BAB399.vdb'
-[04:23:19, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/597B1789.vdb'
-[04:23:56, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:23:57, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/597B1789.vdb'
-[04:24:00, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2A12199A.vdb'
-[04:24:01, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:24:01, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2A12199A.vdb'
-[04:24:06, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/637EEDC8.vdb'
-[04:24:31, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:24:33, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/637EEDC8.vdb'
-[04:27:12, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/637EEDC8.vdb'
-[04:27:19, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2DBA61A8.vdb'
-[04:27:20, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:27:20, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2DBA61A8.vdb'
-[04:28:03, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0A59CBB6.vdb'
-[04:28:04, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:28:04, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0A59CBB6.vdb'
-[04:29:14, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/33870CF1.vdb'
-[04:29:36, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:29:37, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/17EBF924.vdb'
-[04:31:39, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:31:39, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/1CF76FE4.vdb'
-[04:31:43, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:31:44, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/1BFADB2A.vdb'
-[04:31:56, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:31:56, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/17846289.vdb'
-[04:32:01, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:32:01, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6F43ACDB.vdb'
-[04:32:31, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:32:33, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/60042FA9.vdb'
-[04:32:33, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:32:34, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/60042FA9.vdb'
-[04:32:47, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/3180B0BA.vdb'
-[04:32:55, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:32:56, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2AA94EF4.vdb'
-[04:36:52, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-[04:36:53, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/5B9BA027.vdb'
-[04:36:59, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
-********************************************************************************
-*                             Shutting down Cubiquity                          *
-********************************************************************************
-
+[15:00:23, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0A4CE20E.vdb'
+[15:00:23, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/08AF13AC.vdb'
+[15:00:31, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:00:56, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:02:41, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/32A8D27F.vdb'
+[15:02:41, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/25EE5123.vdb'
+[15:02:47, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/027C8BEF.vdb'
+[15:03:02, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:04:26, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:04:26, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:04:33, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/224E68FF.vdb'
+[15:04:34, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/3C4E8EA1.vdb'
+[15:04:40, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:07:34, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:07:53, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/401F4934.vdb'
+[15:07:54, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/41A18FA6.vdb'
+[15:07:56, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:07:56, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/54776DDA.vdb'
+[15:08:21, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/3DBCF1B5.vdb'
+[15:09:02, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:09:02, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/3DBCF1B5.vdb'
+[15:10:06, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:10:06, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:10:09, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/3DBCF1B5.vdb'
+[15:12:07, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/4F5EC8E2.vdb'
+[15:12:07, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0C46E27E.vdb'
+[15:12:19, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:12:45, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/264FB3EF.vdb'
+[15:12:54, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:12:54, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/264FB3EF.vdb'
+[15:13:35, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/264FB3EF.vdb'
+[15:13:50, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/264FB3EF.vdb'
+[15:13:50, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/264FB3EF.vdb'
+[15:13:52, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/264FB3EF.vdb'
+[15:13:54, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:14:04, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/5CDA312D.vdb'
+[15:14:05, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/778CCCC2.vdb'
+[15:14:14, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:31:09, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:31:34, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/7C6DB2A9.vdb'
+[15:32:00, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:32:01, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/7C6DB2A9.vdb'
+[15:32:05, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/44EA51E0.vdb'
+[15:32:06, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:32:07, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/44EA51E0.vdb'
+[15:32:10, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6863DE3C.vdb'
+[15:32:11, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/379F42CA.vdb'
+[15:32:11, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:32:11, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/379F42CA.vdb'
+[15:32:16, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2F46C3F4.vdb'
+[15:32:56, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:32:56, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:32:57, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2F46C3F4.vdb'
+[15:33:01, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/5C31C9DF.vdb'
+[15:33:02, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/49BD2D36.vdb'
+[15:33:02, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:33:11, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/49BD2D36.vdb'
+[15:33:16, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6906A946.vdb'
+[15:33:45, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:33:45, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:33:46, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/38123364.vdb'
+[15:33:46, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2B311951.vdb'
+[15:33:47, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:33:54, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/5EEF0A7D.vdb'
+[15:33:55, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:33:55, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:33:57, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/698D8341.vdb'
+[15:33:57, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/1FF3D084.vdb'
+[15:33:57, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:34:04, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/1FF3D084.vdb'
+[15:34:09, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/512A14BA.vdb'
+[15:36:04, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:36:04, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:36:06, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/50E0963B.vdb'
+[15:36:07, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/299451CE.vdb'
+[15:36:07, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:36:12, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/299451CE.vdb'
+[15:36:29, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/50D7BD39.vdb'
+[15:41:46, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:41:46, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:41:47, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/444E7BBB.vdb'
+[15:41:47, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/1F33438E.vdb'
+[15:41:48, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:41:48, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/1F33438E.vdb'
+[15:41:52, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/1F33438E.vdb'
+[15:41:59, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/511320A1.vdb'
+[15:42:35, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:42:35, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:42:37, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/7A4843B1.vdb'
+[15:42:37, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0D0D48D8.vdb'
+[15:42:37, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:42:38, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0D0D48D8.vdb'
+[15:42:52, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6C183C43.vdb'
+[15:43:12, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:43:12, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:43:13, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6C183C43.vdb'
+[15:43:17, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/18CD0963.vdb'
+[15:43:18, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0A9BDEFF.vdb'
+[15:43:18, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:43:19, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0A9BDEFF.vdb'
+[15:43:26, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/05DC25D3.vdb'
+[15:43:32, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:43:32, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/102FE12E.vdb'
+[15:43:33, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:43:33, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/102FE12E.vdb'
+[15:43:36, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/37B77DF3.vdb'
+[15:43:38, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:43:39, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2E2370D9.vdb'
+[15:43:39, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:43:39, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2E2370D9.vdb'
+[15:43:43, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/71074EF3.vdb'
+[15:45:39, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:45:39, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:45:40, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0A34DE08.vdb'
+[15:45:41, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6B1722B7.vdb'
+[15:45:41, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:45:50, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/5D1C483D.vdb'
+[15:45:54, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:45:54, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6B79A6BA.vdb'
+[15:45:54, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:45:57, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0C7F82B8.vdb'
+[15:46:16, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:46:16, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:46:17, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/47B27460.vdb'
+[15:46:17, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/05A8C456.vdb'
+[15:46:17, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:48:48, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2C412EFB.vdb'
+[15:48:51, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:48:51, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/199D2DA7.vdb'
+[15:48:51, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:48:55, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/67E5984A.vdb'
+[15:48:57, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:48:57, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0A3BDB4D.vdb'
+[15:48:57, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:49:00, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0CE6769F.vdb'
+[15:49:45, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:49:45, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:49:46, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0CE6769F.vdb'
+[15:49:51, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/1BD3A9E0.vdb'
+[15:49:52, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/02880E29.vdb'
+[15:49:52, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:49:58, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6F235E2C.vdb'
+[15:50:03, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:50:10, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6482D578.vdb'
+[15:50:12, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:50:12, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0F4E6EA6.vdb'
+[15:51:15, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:51:15, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:51:16, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/4890A71E.vdb'
+[15:51:17, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/256C5773.vdb'
+[15:51:17, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:51:24, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/12B4B1B1.vdb'
+[15:51:26, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:51:30, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/29D76284.vdb'
+[15:51:31, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:51:35, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2FA4F371.vdb'
+[15:52:58, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:52:58, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:53:01, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2FA4F371.vdb'
+[15:54:14, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6EE60A01.vdb'
+[15:54:15, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/7EDF54FF.vdb'
+[15:54:15, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:54:23, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/148BC15A.vdb'
+[15:54:26, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:54:26, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/76AB4A75.vdb'
+[15:54:30, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/3A9BCBAC.vdb'
+[15:54:32, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:54:32, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/3366E849.vdb'
+[15:54:36, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0EF4571D.vdb'
+[15:54:38, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:54:38, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/200ECE3B.vdb'
+[15:54:41, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/1E5E5F69.vdb'
+[15:56:27, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:56:27, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:56:27, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:56:27, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:56:27, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:56:29, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/3904CE16.vdb'
+[15:56:30, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/5734D5C0.vdb'
+[15:56:30, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:56:37, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/1D2A8420.vdb'
+[15:56:38, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:58:26, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/78768F8C.vdb'
+[15:59:31, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:59:31, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:59:34, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/5F6EB280.vdb'
+[15:59:34, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6245E1D4.vdb'
+[15:59:35, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:59:44, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/02843959.vdb'
+[15:59:46, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:59:46, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:59:48, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/22509342.vdb'
+[15:59:49, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/133AB777.vdb'
+[15:59:49, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[15:59:58, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/50E7B260.vdb'
+[16:00:10, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[16:00:10, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/445EFC7C.vdb'
+[16:00:26, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[16:00:26, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[16:00:30, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/445EFC7C.vdb'
+[16:00:47, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/40AA1249.vdb'
+[16:00:47, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0BF02BDC.vdb'
+[16:00:47, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[16:00:48, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/0BF02BDC.vdb'
+[16:00:55, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/42E0AA76.vdb'
+[16:00:58, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[16:01:01, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/119538B2.vdb'
+[16:01:04, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[16:01:07, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/119538B2.vdb'
+[16:01:07, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/489EC93B.vdb'
+[16:11:13, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[16:11:13, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once
+[16:11:16, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/489EC93B.vdb'
+[16:12:31, Info   ]: Creating voxel database from 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/489EC93B.vdb'
+[16:13:10, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/2FCCC90D.vdb'
+[16:16:14, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/6423EF71.vdb'
+[16:17:14, Info   ]: Creating empty voxel database as 'C:/Users/MICHAE~1/AppData/Local/Temp/me/SWTOR Galaxy/25D2C4B4.vdb'
+[16:17:18, Info   ]: Resizing compressed data buffer to 144307bytes. This should only happen once

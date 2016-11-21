@@ -5,65 +5,49 @@ using UnityStandardAssets.ImageEffects;
 
 public class GalaxyManager : MonoBehaviour
 {
-
-
 	public Camera MainCamera;
-
 	public Bloom myBloom;
 	public DepthOfField myDepthOfField;
-
 	public AudioListener MainAudioListener;
-
 	public GameObject GvrMain;
 	public ShootSpawner myShootSpawner;
 	public data_en _data_en;
 	public GameObject controllerPivot;
-
 	public Transform theUniverse;
-
 	public GameObject cursorOn;
 	public GameObject uiOn;
-
 	public GameObject cursorOff;
 	public GameObject messageCanvas;
-
-
-	public ControllerMoveOut activateOnTouch;
-
+	public MovementController activateOnTouch;
 	public GameObject TutorialOverlay;
 	public GameObject Cursors;
+	public bool holding = false;
+	public bool zoomed = false;
+	public bool animating = false;
 
 	private GameObject currentHitObject = null;
-
 	private Renderer controllerCursorRenderer;
 
 	// Currently selected GameObject.
 	private GameObject selectedObject;
-
+	private GameObject selectedZoomObject;
 	// True if we are dragging the currently selected GameObject.
 	private bool dragging;
-	private bool holding = false;
 	private GameObject heldObject;
 	private Vector3 heldOrigPosition;
 	private float screenHeightCheck;
-
-
 	private int randomGenerationDiamater = 90;
-
-
 	private bool booTutorialOpen = true;
 	private bool booIntroClosed = false;
 
 
 	void Start ()
 	{
-
+		
 		screenHeightCheck = (Screen.currentResolution.height * 0.4f);
-
 
 		// disable for tutorial to finish
 		Cursors.SetActive (false);
-
 
 	}
 
@@ -162,7 +146,7 @@ public class GalaxyManager : MonoBehaviour
 		//	print ( OVRInput.Get( OVRInput.Axis2D.Any  ) ) ;
 		//	|| OVRInput.Get( OVRInput.Axis2D.Any  ) != Vector2.zero
 
-		if (Input.GetButton ("Fire1") || Input.GetMouseButtonDown (0)) {
+		if (Input.GetButtonDown ("Fire1") || Input.GetMouseButtonDown (0)) {
 
 			inputTrue = true;
 		}
@@ -178,13 +162,22 @@ public class GalaxyManager : MonoBehaviour
 
 				
 			hold (currentHitObject);
-		
+			return;
 
 		}
 
-		if (!inputTrue && holding) {
+		// zoom further
+		if (inputTrue && holding && !zoomed) {
+
+			zoom (currentHitObject);
+			return;
+		}
+
+
+		if (inputTrue) {
 
 			release ();
+			return;
 		}
 
 
@@ -313,13 +306,25 @@ public class GalaxyManager : MonoBehaviour
 
 	private void release ()
 	{
-
 		holding = false;
-		activateOnTouch.Release (GvrMain, heldOrigPosition, heldObject);
-
+		zoomed = false;
 		if (heldObject) {
+			activateOnTouch.Release (GvrMain, heldOrigPosition, heldObject);
 			heldObject.SendMessage ("activateZoomed", false);
+			heldObject.SendMessage ("activateZoomIn", false);
 		}
+	}
+
+	private	 void zoom (GameObject holdObj)
+	{
+	print ( "zoom" );
+		holding = true;
+		zoomed = true;
+		heldObject = holdObj;
+		heldOrigPosition = Vector3.zero;  //holdObj.transform.position;
+
+		heldObject.SendMessage ("activateZoomIn", true);
+
 	}
 
 	private	 void hold (GameObject holdObj)
@@ -330,7 +335,8 @@ public class GalaxyManager : MonoBehaviour
 		heldOrigPosition = Vector3.zero;  //holdObj.transform.position;
 		activateOnTouch.Hold (GvrMain, holdObj);
 
-	
+
+
 		heldObject.SendMessage ("activateZoomed", true);
 
 
@@ -339,18 +345,26 @@ public class GalaxyManager : MonoBehaviour
 
 	private void UpdatePointer ()
 	{
-	
 
 		currentHitObject = myShootSpawner.GetCurrentGameObject ();
-		SetSelectedObject (currentHitObject);
 
-		
+		if (currentHitObject) {
+
+			SetSelectedObject (currentHitObject);
+
+		}
 
 	}
 
 	private void SetSelectedObject (GameObject obj)
 	{
+		UpdateCursors (obj);
 
+		selectedObject = obj;
+	}
+
+	private void UpdateCursors (GameObject obj)
+	{
 
 		if (holding) {
 			Cursors.SetActive (false);
@@ -370,8 +384,6 @@ public class GalaxyManager : MonoBehaviour
 			cursorOff.SetActive (true);
 			uiOn.SetActive (false);
 		}
-
-		selectedObject = obj;
 
 
 	}

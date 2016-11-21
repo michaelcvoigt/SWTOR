@@ -84,7 +84,7 @@ public class GvrHead : MonoBehaviour
 	{
 
 
-		if (updated) {  // Only one update per frame, please.
+		if (updated  || !OVRPlugin.userPresent) {  // Only one update per frame, please.
 			return;
 		}
 
@@ -112,9 +112,6 @@ public class GvrHead : MonoBehaviour
 */
 							
 	
-
-
-
 		if (target == null) {
 
 

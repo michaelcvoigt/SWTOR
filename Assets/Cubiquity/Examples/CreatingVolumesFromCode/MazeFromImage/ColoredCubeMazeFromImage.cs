@@ -3,27 +3,39 @@ using System.Collections;
 
 using Cubiquity;
 
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class ColoredCubeMazeFromImage : MonoBehaviour
 {
 
-	public Texture2D mazeImage = null;
-	public Texture2D colorImage = null;
+	private string mazeImage = null;
+	private string colorImage = null;
 
 	// Use this for initialization
+
+	public void SetImages (string maze, string color)
+	{
+		mazeImage = maze;
+		colorImage = color;
+	}
+
 	void Awake ()
 	{
+		if (mazeImage != null) {
+			Load ();
+		}
+	}
 
-	print("dfasdf");
+	public void Load ()
+	{
 
-		// Texture2D mazeImage = Resources.Load("Images/Maze") as Texture2D;
-		// Texture2D colorImage = Resources.Load("Images/Color") as Texture2D;
+		Texture2D mazeTexture2D = Resources.Load("Images/"+mazeImage) as Texture2D;
+		Texture2D colorTexture2D = Resources.Load("Images/"+colorImage) as Texture2D;
 
 		// The size of the volume we will generate. Note that our source image cn be considered
 		// to have x and y axes,  but we map these to x and z because in Unity3D the y axis is up.
-		int width = mazeImage.width;
+		int width = mazeTexture2D.width;
 		int height = 100;
-		int depth = mazeImage.height;
+		int depth = mazeTexture2D.height;
 		
 		// Start with some empty volume data and we'll write our maze into this.
 		/// [DoxygenSnippet-CreateEmptyColoredCubesVolumeData]
@@ -61,9 +73,9 @@ public class ColoredCubeMazeFromImage : MonoBehaviour
 				//bool isWall = mazeImage.GetPixel(x, z).r < 0.5; // A black pixel represents a wall	
 
 	
-				QuantizedColor voxColor = new QuantizedColor ((byte)(colorImage.GetPixel (x, z).r * 255), (byte)(colorImage.GetPixel (x, z).g * 255), (byte)(colorImage.GetPixel (x, z).b * 255), 255);
+				QuantizedColor voxColor = new QuantizedColor ((byte)(colorTexture2D.GetPixel (x, z).r * 255), (byte)(colorTexture2D.GetPixel (x, z).g * 255), (byte)(colorTexture2D.GetPixel (x, z).b * 255), 255);
 
-				int currentHeight = (byte)(mazeImage.GetPixel (x, z).r * 100);
+				int currentHeight = (byte)(mazeTexture2D.GetPixel (x, z).r * 100);
 
 				// Iterate over every voxel in the current column.
 				for (int y = currentHeight - 1; y > 0; y--) {
