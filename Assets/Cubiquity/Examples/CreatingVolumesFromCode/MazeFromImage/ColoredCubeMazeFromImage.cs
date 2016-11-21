@@ -7,20 +7,20 @@ using Cubiquity;
 public class ColoredCubeMazeFromImage : MonoBehaviour
 {
 
-	private string mazeImage = null;
-	private string colorImage = null;
+	private string imageName = null;
 
 	// Use this for initialization
 
-	public void SetImages (string maze, string color)
+	public void SetImages (string name)
 	{
-		mazeImage = maze;
-		colorImage = color;
+		imageName = name;
+
 	}
 
 	void Awake ()
 	{
-		if (mazeImage != null) {
+
+		if (imageName != null) {
 			Load ();
 		}
 	}
@@ -28,8 +28,10 @@ public class ColoredCubeMazeFromImage : MonoBehaviour
 	public void Load ()
 	{
 
-		Texture2D mazeTexture2D = Resources.Load("Images/"+mazeImage) as Texture2D;
-		Texture2D colorTexture2D = Resources.Load("Images/"+colorImage) as Texture2D;
+		print( imageName );
+
+		Texture2D mazeTexture2D = Resources.Load("Images/"+imageName + "Maze") as Texture2D;
+		Texture2D colorTexture2D = Resources.Load("Images/"+imageName+ "Color") as Texture2D;
 
 		// The size of the volume we will generate. Note that our source image cn be considered
 		// to have x and y axes,  but we map these to x and z because in Unity3D the y axis is up.

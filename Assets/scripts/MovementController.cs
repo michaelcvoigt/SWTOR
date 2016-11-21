@@ -9,7 +9,7 @@ public class MovementController : MonoBehaviour
 	public GameObject galaxy;
 	public GameObject cameras;
 	public GvrHead _GvrHead;
-	public GalaxyManager _GalaxyManager;
+
 	private float planetLerpTime = 1.5f;
 	private Vector3 startPos;
 	private Vector3 endPos;
@@ -31,6 +31,7 @@ public class MovementController : MonoBehaviour
 		target.transform.parent.parent.parent = null;
 		target.transform.parent.parent.SetParent (universe, true);
 
+		GalaxyManager.instance.animating = false;
 		StopCoroutine (co);
 		_GvrHead.SetTargetNull ();
 
@@ -52,7 +53,6 @@ public class MovementController : MonoBehaviour
 	{
 
 
-		
 		startPos = obj.transform.localPosition;
 		endPos = target.transform.position; //( startPos + target.transform.localPosition ) / 3.5f;
 
@@ -72,7 +72,7 @@ public class MovementController : MonoBehaviour
 
 	private System.Collections.IEnumerator move (Vector3 start, Vector3 end, float time, GameObject obj, bool setTarget, GameObject target)
 	{
-		_GalaxyManager.animating = true;
+		GalaxyManager.instance.animating = true;
 		float elapsedTime = 0;
 
 		while (elapsedTime < time) {
@@ -83,7 +83,7 @@ public class MovementController : MonoBehaviour
 			elapsedTime += Time.deltaTime;
 
 			yield return new WaitForEndOfFrame ();
-			_GalaxyManager.animating = false;
+
 
 			if (setTarget && elapsedTime >= time) {
               
@@ -92,18 +92,17 @@ public class MovementController : MonoBehaviour
 				target.transform.parent.parent.parent = obj.transform;
 
 				_GvrHead.SetTarget (obj.transform, target.transform.parent.parent.transform);
-
-
-
+				GalaxyManager.instance.animating = false;
 			}
 		}
+		GalaxyManager.instance.animating = false;
 
 	}
 
 
 	private System.Collections.IEnumerator scale (Vector3 start, Vector3 end, float time, GameObject obj)
 	{
-		_GalaxyManager.animating = true;
+		GalaxyManager.instance.animating = true;
 		float elapsedTime = 0;
 
 		while (elapsedTime < time) {
@@ -112,8 +111,9 @@ public class MovementController : MonoBehaviour
 			elapsedTime += Time.deltaTime;
 
 			yield return new WaitForEndOfFrame ();
-			_GalaxyManager.animating = false;
+
 		}
+		GalaxyManager.instance.animating = false;
 	}
 
 
