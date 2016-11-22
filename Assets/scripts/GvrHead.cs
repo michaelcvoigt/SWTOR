@@ -24,7 +24,9 @@ public class GvrHead : MonoBehaviour
 	private Coroutine cr0;
 	private Coroutine cr1;
 	private float lerpTime = 0.15f;
- 
+
+	// 5.1 0 44.1
+
 	private bool updated;
 	public bool updateEarly = false;
 
@@ -32,21 +34,19 @@ public class GvrHead : MonoBehaviour
 	private Quaternion objectToRotateOrigRot = new Quaternion (0, 0, 0, 0);
 	private Transform lastObjectToRotate = null;
 
-	void Awake ()
-	{
-
-
-		//if( !OVRPlugin.userPresent ){
-
-			//Time.timeScale = 0.0f;
-			//VR.InputTracking.Recenter ();
-
-	}
+	private bool headCentered = false;
 
 
 	void Update ()
 	{
 
+	  /*
+		if (!headCentered && OVRPlugin.userPresent) {
+
+			VR.InputTracking.Recenter ();
+			headCentered = true;
+		}
+		*/
 
 		if (Input.GetKey (KeyCode.Escape)) {
 

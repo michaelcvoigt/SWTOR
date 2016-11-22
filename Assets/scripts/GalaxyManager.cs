@@ -98,12 +98,9 @@ public class GalaxyManager : MonoBehaviour
 
 			targetSpin[] targets = theUniverse.GetComponentsInChildren<targetSpin> ();
 
-			print( targets.Length );
-
 			for (int j = 0; j < targets.Length; ++j) {
 
-					print( j );
-
+				
 					targets [j].Init ();
 
 			}

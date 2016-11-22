@@ -43,7 +43,7 @@ public class planetSpin : MonoBehaviour
 			MyCubeGameobject.SetActive (false);
 			CubeOrigScale = MyCube.transform.localScale;
 
-			MyCube.Load();
+			//MyCube.Load();
 
 			if (GameObjectToHideWhenZoomed.Length > 0) {
 
@@ -151,7 +151,7 @@ public class planetSpin : MonoBehaviour
 		if (active) {
 
 
-			//MyCube.Load ();
+			MyCube.Load ();
 
 			MyCubeGameobject.transform.localScale = scale0;
 			c0 = StartCoroutine (scale (scale0, CubeOrigScale, lerpTime, MyCubeGameobject,false));
