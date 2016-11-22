@@ -5,6 +5,14 @@ using UnityStandardAssets.ImageEffects;
 using VacuumShaders.CurvedWorld;
 using System.Collections;
 
+
+// make planet maps
+
+// look at ord -- doing something to make it more like a sphere
+// maybe turn of depth of field?
+// align all mazes for other objects
+// make other maps
+
 public class GalaxyManager : MonoBehaviour
 {
 	public static GalaxyManager instance;
@@ -45,6 +53,7 @@ public class GalaxyManager : MonoBehaviour
 	private bool booTutorialOpen = true;
 	private bool booIntroClosed = false;
 
+	private Vector3[] location;
 
 	void Start ()
 	{
@@ -54,12 +63,48 @@ public class GalaxyManager : MonoBehaviour
 		// disable for tutorial to finish
 		Cursors.SetActive (false);
 
+		location = new Vector3[16];
+
+		// Alderaan 
+		location [0] = new Vector3 (-56.3f, 26.5f, -40.4f);
+		// Balmorra 
+		location [1] = new Vector3 (-11.3f, 31.7f, -37.3f);
+		// Belsavis 
+		location [2] = new Vector3 (25.3f, -4.0f, 71.9f);
+		// Corellia 
+		location [3] = new Vector3 (-3.7f, 35.0f, -79.8f);
+		// Coruscant 
+		location [4] = new Vector3 (24.7f, 39.6f, 28.3f);
+		// Dromund_Kaas 
+		location [5] = new Vector3 (-60.4f, 52.0f, 34.0f);
+		// Hoth 
+		location [6] = new Vector3 (53.9f, 45.2f, -48.0f);
+		// Hutta 
+		location [7] = new Vector3 (-13.8f, -64.1f, -35.3f);
+		// Ilum 
+		location [8] = new Vector3 (-2.5f, 57.6f, -43.8f);
+		// Korriban 
+		location [9] = new Vector3 (9.6f, 46.2f, -12.1f);
+		// Nar_Shaddaa 
+		location [10] = new Vector3 (10.1f, 46.0f, -63.6f);
+		// Ord_Mantell 
+		location [11] = new Vector3 (-16.9f, -50.7f, 30.4f);
+		// Quesh 
+		location [12] = new Vector3 (53.0f, -49.9f, -16.7f);
+		// Taris 
+		location [13] = new Vector3 (19.9f, -16.7f, 52.4f);
+		// Tatooine 
+		location [14] = new Vector3 (-37.0f, 15.0f, -35.6f);
+		// Tython 
+		location [15] = new Vector3 (25.5f, 16.7f, -6.9f);
+
 	}
 
 
 	public void CreatePlanets (int _count)
 	{
 		
+		//string temp = "";
 
 		for (var i = 0; i < _count; ++i) {
 
@@ -84,26 +129,27 @@ public class GalaxyManager : MonoBehaviour
 			_planetSpin.setTextures (_video, false);	
 			_planetSpin.setName (_video);	
 
-
-			instance.transform.position = Random.insideUnitSphere * randomGenerationDiamater;
-
-			//activateOnTouch.resolveIn (instance);
+			instance.transform.position = location[i];
+			//instance.transform.position = Random.insideUnitSphere * randomGenerationDiamater;
 
 			_planetSpin.Init ();
 
-	
-	  }
+
+			//temp = temp + "// " + _video + " \n location[" + i + "] = new Vector3" + instance.transform.position + ";\n ";
+		}
+
+		//print (temp);
 
 
 
-			targetSpin[] targets = theUniverse.GetComponentsInChildren<targetSpin> ();
+		targetSpin[] targets = theUniverse.GetComponentsInChildren<targetSpin> ();
 
-			for (int j = 0; j < targets.Length; ++j) {
+		for (int j = 0; j < targets.Length; ++j) {
 
 				
-					targets [j].Init ();
+			targets [j].Init ();
 
-			}
+		}
 
 
 		theUniverse.gameObject.SetActive (false);

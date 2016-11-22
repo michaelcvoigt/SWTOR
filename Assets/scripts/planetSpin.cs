@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityStandardAssets.ImageEffects;
 
 public class planetSpin : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class planetSpin : MonoBehaviour
 	private float lerpTime = 1.0f;
 	private Coroutine c0;
 	private Coroutine c1;
+	private Coroutine c2;
 
 	public GameObject parent;
 	public Renderer diffuse;
@@ -30,12 +32,15 @@ public class planetSpin : MonoBehaviour
 	private Texture cloudTexture;
 	private Texture coronaTexture;
 	private Texture ringTexture;
-
+	private TextMesh textMesh;
 
 	public void Init ()
 	{
+
+
 		c0 = StartCoroutine(nothing());
 		c1 = StartCoroutine(nothing());
+		c2 = StartCoroutine(nothing());
 
 		if (MyCube && MyCubeGameobject) {
 
@@ -98,6 +103,8 @@ public class planetSpin : MonoBehaviour
 
 	public void setName (string _name)
 	{
+
+		textMesh = nameTextGameObject.GetComponentInChildren<TextMesh> ();
 		nameText = _name;
 
 	}
@@ -111,8 +118,6 @@ public class planetSpin : MonoBehaviour
 	public void activateZoomed (bool _active)
 	{
 		nameTextGameObject.SetActive (_active);
-
-		TextMesh textMesh = nameTextGameObject.GetComponentInChildren<TextMesh> ();
 
 		textMesh.text = getName ();
 
@@ -141,15 +146,24 @@ public class planetSpin : MonoBehaviour
 	public void activateZoomIn (bool active)
 	{
 		GalaxyManager.instance.animating = false;
+
+
+
 		StopCoroutine (c0);
 		StopCoroutine (c1);
+		StopCoroutine (c2);
 
-		Vector3 scale0 = new Vector3 (0.1f, 0.1f, 0.1f);
-		//Vector3 scale1 = new Vector3 (1.0f, 1.0f, 1.0f);
+		Vector3 scale0 = new Vector3 (4.1f, 4.1f, 4.1f);
+		Vector3 scale1 = new Vector3 (0.1f, 0.1f, 0.1f);
 		MyCubeGameobject.SetActive (true);
+
 
 		if (active) {
 
+			c2 = StartCoroutine (scaleValue ( 3.66f, 20.0f, lerpTime*0.5f ));
+
+			textMesh.text = "Sector View";
+			textMesh.gameObject.SetActive(false);
 
 			MyCube.Load ();
 
@@ -164,9 +178,13 @@ public class planetSpin : MonoBehaviour
 
 		} else {
 
+			c2 = StartCoroutine (scaleValue ( 3.66f, 20.0f, lerpTime*0.5f  ));
+
+			textMesh.text = getName ();
+			textMesh.gameObject.SetActive(false);
 
 			MyCubeGameobject.transform.localScale = CubeOrigScale;
-			c0 = StartCoroutine (scale (CubeOrigScale, scale0, lerpTime, MyCubeGameobject,true));
+			c0 = StartCoroutine (scale (CubeOrigScale, scale1, lerpTime, MyCubeGameobject,true));
 
 			for (int i = 0; i < GameObjectToHideWhenZoomed.Length; i++) {
 				GameObjectToHideWhenZoomed[i].SetActive(true);
@@ -192,12 +210,53 @@ public class planetSpin : MonoBehaviour
 
 		}
 
+		textMesh.gameObject.SetActive(true);
 		GalaxyManager.instance.animating = false;
 		if (hide)
 			obj.SetActive (false);
 	}
 
 
+	private System.Collections.IEnumerator scaleValue (float start, float end, float time)
+	{
+
+
+		float elapsedTime = 0;
+
+		while (elapsedTime <( time  ) ) {
+
+			GalaxyManager.instance.myDepthOfField.focalLength = Mathf.Lerp (start, end, (elapsedTime / time));
+			elapsedTime += Time.deltaTime;
+
+			yield return new WaitForEndOfFrame ();
+
+		}
+
+		GalaxyManager.instance.myDepthOfField.focalLength = end;
+		StartCoroutine (scaleValueBack ( end, start, time));
+
+	}
+
+
+	private System.Collections.IEnumerator scaleValueBack (float start, float end, float time)
+	{
+
+
+		float elapsedTime = 0;
+
+		while (elapsedTime <( time * 0.5f ) ) {
+
+					GalaxyManager.instance.myDepthOfField.focalLength = Mathf.Lerp (start, end, (elapsedTime / time));
+
+			elapsedTime += Time.deltaTime;
+
+			yield return new WaitForEndOfFrame ();
+
+		}
+
+		GalaxyManager.instance.myDepthOfField.focalLength = end;
+
+	}
 
 
 }
