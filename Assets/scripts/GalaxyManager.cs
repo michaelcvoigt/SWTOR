@@ -6,6 +6,7 @@ using VacuumShaders.CurvedWorld;
 using System.Collections;
 
 
+// rotation gets messed up as you go away from front view 
 // make planet maps
 
 // look at ord -- doing something to make it more like a sphere
