@@ -5,8 +5,10 @@ using UnityStandardAssets.ImageEffects;
 using VacuumShaders.CurvedWorld;
 using System.Collections;
 
+// android : fix killer base , make emmissive channels for all planets
 
-// rotation gets messed up as you go away from front view 
+
+// rotation gets messed up as you go away from front view
 // make planet maps
 
 // look at ord -- doing something to make it more like a sphere
@@ -37,6 +39,8 @@ public class GalaxyManager : MonoBehaviour
 	public bool holding = false;
 	public bool zoomed = false;
 	public bool animating = false;
+	public Light MyDirectionalLight;
+	public Light MyFlashLight;
 	public CurvedWorld_Controller curvedWorld_Controller;
 
 	private GameObject currentHitObject = null;
@@ -58,6 +62,12 @@ public class GalaxyManager : MonoBehaviour
 
 	void Start ()
 	{
+		#if UNITY_ANDROID
+		MyDirectionalLight.intensity = 1.75f;
+		MyFlashLight.intensity = 2.55f;
+		MyFlashLight.spotAngle = 150.0f;
+		#endif
+
 		instance = this;
 		screenHeightCheck = (Screen.currentResolution.height * 0.4f);
 
@@ -111,7 +121,7 @@ public class GalaxyManager : MonoBehaviour
 
 			GameObject instance = Instantiate (Resources.Load ("PlanetOculus", typeof(GameObject))) as GameObject;
 		
-				//GameObject instance = Instantiate(Resources.Load("Planet", typeof(GameObject))) as GameObject;
+			//GameObject instance = Instantiate(Resources.Load("Planet", typeof(GameObject))) as GameObject;
 
 
 			planetSpin _planetSpin = instance.GetComponentInChildren<planetSpin> ();
@@ -123,7 +133,7 @@ public class GalaxyManager : MonoBehaviour
 			_planetSpin.setTextures (_video, false);	
 			_planetSpin.setName (_video);	
 
-			instance.transform.position = location[i];
+			instance.transform.position = location [i];
 			//instance.transform.position = Random.insideUnitSphere * randomGenerationDiamater;
 
 			_planetSpin.Init ();
@@ -164,7 +174,7 @@ public class GalaxyManager : MonoBehaviour
 
 		#if  UNITY_STANDALONE_WIN || UNITY_EDITOR
 
-			myDepthOfField.enabled = true;
+		myDepthOfField.enabled = true;
 
 		#endif
 
@@ -296,7 +306,7 @@ public class GalaxyManager : MonoBehaviour
 
 		UpdatePointer ();
 
-		if ( (  Input.GetButtonDown ("Fire1")   ) && !animating   ) {
+		if ((Input.GetButtonDown ("Fire1")) && !animating) {
 
 			inputTrue = true;
 		}
