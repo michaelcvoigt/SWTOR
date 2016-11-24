@@ -26,6 +26,7 @@ public class ColoredCubeMazeFromImage : MonoBehaviour
 
 	public void Load ()
 	{
+		#if !UNITY_ANDROID
 
 		print( "Load  called :  " + imageName );
 
@@ -87,6 +88,8 @@ public class ColoredCubeMazeFromImage : MonoBehaviour
 				}
 			}
 		}
+
+		#endif
 	}
 	
 

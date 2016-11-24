@@ -109,17 +109,10 @@ public class GalaxyManager : MonoBehaviour
 
 		for (var i = 0; i < _count; ++i) {
 
-		
-
-			#if  UNITY_STANDALONE_WIN
-
 			GameObject instance = Instantiate (Resources.Load ("PlanetOculus", typeof(GameObject))) as GameObject;
-			#endif
-			#if  UNITY_ANDROID  
+		
+				//GameObject instance = Instantiate(Resources.Load("Planet", typeof(GameObject))) as GameObject;
 
-				GameObject instance = Instantiate(Resources.Load("Planet", typeof(GameObject))) as GameObject;
-
-			#endif
 
 			planetSpin _planetSpin = instance.GetComponentInChildren<planetSpin> ();
 
@@ -168,7 +161,12 @@ public class GalaxyManager : MonoBehaviour
 		TutorialOverlay.SetActive (false);
 
 		myBloom.enabled = true;
-		myDepthOfField.enabled = true;
+
+		#if  UNITY_STANDALONE_WIN || UNITY_EDITOR
+
+			myDepthOfField.enabled = true;
+
+		#endif
 
 		Cursors.SetActive (true);
 		booTutorialOpen = false;
@@ -211,7 +209,7 @@ public class GalaxyManager : MonoBehaviour
 
 		#endif
 
-		#if  UNITY_STANDALONE_WIN
+		#if  UNITY_STANDALONE_WIN 
 
 		bool inputTrue = false;
 
@@ -220,7 +218,7 @@ public class GalaxyManager : MonoBehaviour
 
 		UpdatePointer ();
 
-		if ((Input.GetButtonDown ("Fire1") || Input.GetMouseButtonDown (0)) && !animating) {
+		if ( (   Input.GetButtonDown ("Fire1") || Input.GetMouseButtonDown (0)  ) && !animating   ) {
 
 			inputTrue = true;
 		}
@@ -288,47 +286,44 @@ public class GalaxyManager : MonoBehaviour
 
 			}
 
-
-
 		#endif
 		#if UNITY_ANDROID
 
-			if (booTutorialOpen) {
+		bool inputTrue = false;
 
-			if ( Input.GetButton ("Fire1")   ) {
-					closeIntro ();
-					return;
-				}
-				;
-			}
+		//	print ( OVRInput.Get( OVRInput.Axis2D.Any  ) ) ;
+		//	|| OVRInput.Get( OVRInput.Axis2D.Any  ) != Vector2.zero
 
+		UpdatePointer ();
 
-			// for old cardboard 
-			/*
-			if (Input.touchCount == 1 && currentHitObject && !holding) {
+		if ( (  Input.GetButtonDown ("Fire1")   ) && !animating   ) {
 
-				if (Input.touches [0].position.y < screenHeightCheck) {
-
-					hold (currentHitObject);
-
-				}
-				;
-
-			}
-			;
-			*/
+			inputTrue = true;
+		}
 
 
-			if (Input.GetButton ("Fire1") && currentHitObject && !holding) {
+		if (booTutorialOpen && inputTrue && !booIntroClosed) {
+			closeIntro ();
+			UpdatePointer ();
+			return;
+		}
 
-				hold (currentHitObject);
-			}
 
-			if (  !Input.GetButton ("Fire1")  && holding) {
+		if (inputTrue && currentHitObject && !holding) {
 
-				release ();
+			hold (currentHitObject);
+			UpdatePointer ();
+			return;
 
-			}
+		}
+
+
+		if (inputTrue) {
+
+			release ();
+			UpdatePointer ();
+			return;
+		}
 
 		#endif
 

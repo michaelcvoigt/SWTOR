@@ -103,8 +103,9 @@ public class planetSpin : MonoBehaviour
 
 	public void setName (string _name)
 	{
-
+		if( nameTextGameObject )
 		textMesh = nameTextGameObject.GetComponentInChildren<TextMesh> ();
+
 		nameText = _name;
 
 	}
@@ -160,7 +161,9 @@ public class planetSpin : MonoBehaviour
 
 		if (active) {
 
-			c2 = StartCoroutine (scaleValue ( 3.66f, 20.0f, lerpTime*0.5f ));
+			#if  UNITY_STANDALONE_WIN || UNITY_EDITOR
+				c2 = StartCoroutine (scaleValue ( 3.66f, 20.0f, lerpTime*0.5f ));
+			#endif
 
 			textMesh.text = "Sector View";
 			textMesh.gameObject.SetActive(false);
@@ -178,7 +181,9 @@ public class planetSpin : MonoBehaviour
 
 		} else {
 
-			c2 = StartCoroutine (scaleValue ( 3.66f, 20.0f, lerpTime*0.5f  ));
+			#if  UNITY_STANDALONE_WIN || UNITY_EDITOR
+				c2 = StartCoroutine (scaleValue ( 3.66f, 20.0f, lerpTime*0.5f  ));
+			#endif 
 
 			textMesh.text = getName ();
 			textMesh.gameObject.SetActive(false);
