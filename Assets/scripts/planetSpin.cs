@@ -73,15 +73,27 @@ public class planetSpin : MonoBehaviour
 
 		string strImage = _name + "_diffuse";	
 
-		//diffuseTexture = Resources.Load(strImage) as Texture;	
+		diffuseTexture = Resources.Load(strImage) as Texture;	
 
-		diffuse.materials [0].mainTexture = Resources.Load (strImage) as Texture;
+		diffuse.materials [0].mainTexture = diffuseTexture;
 
 		string strEmmissiveImage = _name + "_emmissive";	
 
-		//Texture emmissiveImage = Resources.Load(strEmmissiveImage);
+		Texture emmissiveImage = Resources.Load(strEmmissiveImage) as Texture;
 
-		diffuse.materials [0].SetTexture ("_EmissionMap", Resources.Load (strEmmissiveImage) as Texture);
+		if (emmissiveImage) {
+
+			if (emmissiveImage.width <= 32) {
+
+				diffuse.materials [0].SetTexture ("_EmissionMap", diffuseTexture);
+
+			} else {
+
+				diffuse.materials [0].SetTexture ("_EmissionMap", emmissiveImage);
+			}
+
+		}
+
 
 		string cloudImage = _name + "_cloud";
 		clouds.materials [0].mainTexture = Resources.Load (cloudImage) as Texture;
