@@ -200,7 +200,7 @@ public  List<Color> dataOtherBloomColorD;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-		dataOtherVideo [count] = "Dromund_Kaas";
+		dataOtherVideo [count] = "Dromund Kaas";
 		dataOtherBloomIntensity [count] = 0.1f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);
@@ -407,7 +407,7 @@ dataOtherRegion[count] = 2f;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-		dataOtherVideo [count] = "Nar_Shaddaa";
+		dataOtherVideo [count] = "Nar Shaddaa";
 		dataOtherBloomIntensity [count] = 2.0f;
 //dataOtherBloomColorA[count]  = Vector4(0.9,0.4f,0.2f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.5,0.2f,0.2f,0.75f);
@@ -431,7 +431,7 @@ dataOtherRegion[count] = 2f;
 //dataOtherTERRAIN[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 //dataOtherKEYFACTS[count] = _localized_strings.getKey(_loc_count_index_start);_loc_count_index_start++;
 
-		dataOtherVideo [count] = "Ord_Mantell";
+		dataOtherVideo [count] = "Ord Mantell";
 		dataOtherBloomIntensity [count] = 0.4f;
 //dataOtherBloomColorA[count]  = Vector4(0.4f,0.4f,0.8f,0.75f);
 //dataOtherBloomColorB[count]  = Vector4(0.4f,0.8f,0.8f,0.75f);

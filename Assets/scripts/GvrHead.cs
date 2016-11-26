@@ -10,7 +10,7 @@ public class GvrHead : MonoBehaviour
 
 	public Transform targetPoint;
 	public Transform target;
-	public OVRCameraRig rig;
+	//public OVRCameraRig rig;
 
 	private Transform objectToRotate;
 	private Vector3 startPos0;
@@ -35,7 +35,7 @@ public class GvrHead : MonoBehaviour
 	private Transform lastObjectToRotate = null;
 
 	private bool headCentered = false;
-
+	private bool isPaused = false;
 
 	void Update ()
 	{
@@ -79,12 +79,22 @@ public class GvrHead : MonoBehaviour
 		UpdateHead ();
 	}
 
+	void OnApplicationFocus( bool hasFocus )
+	{
+		isPaused = !hasFocus;
+	}
+
+	void OnApplicationPause( bool pauseStatus )
+	{
+		isPaused = pauseStatus;
+	}
+
 	// Compute new head pose.
 	private void UpdateHead ()
 	{
 
 
-		if (updated  || !OVRPlugin.userPresent) {  // Only one update per frame, please.
+		if (updated  || isPaused ) {  // Only one update per frame, please.
 			return;
 		}
 
@@ -93,8 +103,8 @@ public class GvrHead : MonoBehaviour
 
 		//q = Quaternion.Inverse(q);
 
-		float rotX = (q.eulerAngles.x * 1.0f);
-		float rotY = (q.eulerAngles.y * 1.0f);
+		float rotX = (q.eulerAngles.x * 2.7f);
+		float rotY = (q.eulerAngles.y * 2.7f);
 		float rotZ = 0.0f;
 
 		//float posX = (q.x *30.0f);
