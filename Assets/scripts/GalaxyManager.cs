@@ -5,8 +5,10 @@ using UnityStandardAssets.ImageEffects;
 using VacuumShaders.CurvedWorld;
 using System.Collections;
 
-// android : fix killer base , make emmissive channels for all planets
+// performance problem with killer base
 
+// android : fix killer base
+// make emmissive channels for all planets
 
 // rotation gets messed up as you go away from front view
 // make planet maps
@@ -27,6 +29,7 @@ public class GalaxyManager : MonoBehaviour
 	public ShootSpawner myShootSpawner;
 	public data_en _data_en;
 	public GameObject controllerPivot;
+	public TextMesh NameText;
 	public Transform theUniverse;
 	public GameObject cursorOn;
 	public GameObject uiOn;
@@ -337,35 +340,6 @@ public class GalaxyManager : MonoBehaviour
 
 		#endif
 
-		/*
-		if (heldObject) {
-
-		
-			//Quaternion headRotation = InputTracking.GetLocalRotation (VRNode.Head);
-
-			Quaternion headRotation = Input.gyro.attitude;
-
-			float x = Input.acceleration.x;
-			float y = Input.acceleration.y;
-
-			if(heldObject){
-
-
-				heldObject.SendMessage("rotate", x  );
-
-			}
-
-		
-
-			//MainAudioListener.enabled = true;
-
-		} else {
-
-			//MainAudioListener.enabled = false;
-
-		}
-		
-        */
 
 	}
 
@@ -384,10 +358,7 @@ public class GalaxyManager : MonoBehaviour
 
 	private void release ()
 	{
-
-		print ("release called zoomed  = " + zoomed);
-		print ("release called animating  = " + animating);
-		print ("release called holding  = " + holding);
+		NameText.text = "";
 
 		if (heldObject) {
 			activateOnTouch.Release (GvrMain, heldOrigPosition, heldObject);
@@ -405,7 +376,7 @@ public class GalaxyManager : MonoBehaviour
 
 	private	 void zoom ()
 	{
-		print ("heldObject = " + heldObject);
+		NameText.text = "";
 	
 		zoomed = true;
 

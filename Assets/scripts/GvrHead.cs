@@ -4,6 +4,8 @@ using System.Collections;
 using UnityEngine.VR;
 using UnityEngine.SceneManagement;
 
+
+
 public class GvrHead : MonoBehaviour
 {
  
@@ -24,8 +26,6 @@ public class GvrHead : MonoBehaviour
 	private Coroutine cr0;
 	private Coroutine cr1;
 	private float lerpTime = 0.15f;
-
-	// 5.1 0 44.1
 
 	private bool updated;
 	public bool updateEarly = false;
@@ -93,19 +93,15 @@ public class GvrHead : MonoBehaviour
 	private void UpdateHead ()
 	{
 
-
 		if (updated  || isPaused ) {  // Only one update per frame, please.
 			return;
 		}
 
-
 		Quaternion q = InputTracking.GetLocalRotation (VRNode.Head);
 
-		//q = Quaternion.Inverse(q);
-
-		float rotX = (q.eulerAngles.x * 2.7f);
-		float rotY = (q.eulerAngles.y * 2.7f);
-		float rotZ = 0.0f;
+		//float rotX = (q.eulerAngles.x * 3.5f);
+		//float rotY = (q.eulerAngles.y * 3.5f);
+		//float rotZ = (q.eulerAngles.z * 3.5f);
 
 		//float posX = (q.x *30.0f);
 		//float posY = 0; //(q.y * 10.0f);				
@@ -143,14 +139,13 @@ public class GvrHead : MonoBehaviour
 				//cr1 = StartCoroutine (move (startPos0, endPos0, lerpTime, target));
 
 
-				Quaternion newRot = new Quaternion (0, 0, 0, 0); //Quaternion newRot = transform.localRotation;
-				newRot.eulerAngles = new Vector3 (objectToRotateOrigRot.x + rotX, objectToRotateOrigRot.y + rotY, objectToRotateOrigRot.z + rotZ);
+				//Quaternion newRot = new Quaternion (0, 0, 0, 0); //Quaternion newRot = transform.localRotation;
+				//newRot.eulerAngles = new Vector3 (objectToRotateOrigRot.x + rotX, objectToRotateOrigRot.y + rotY, objectToRotateOrigRot.z + rotZ);
 
-				startRot0 = newRot;
+				startRot0 = lastObjectToRotate.transform.rotation; //newRot;
 				endRot0 = objectToRotateOrigRot;
 
 				cr1 = StartCoroutine (rotate (startRot0, endRot0, lerpTime, lastObjectToRotate));
-
 
 				lastObjectToRotate = null;
 
@@ -160,8 +155,6 @@ public class GvrHead : MonoBehaviour
 
 			if (objectToRotate != lastObjectToRotate) {
 
-
-				print ("captured start rotation");
 
 				objectToRotateOrigRot = objectToRotate.transform.rotation;
 				//objectToRotateOrigPosition  = target.transform.localPosition;
@@ -185,12 +178,12 @@ public class GvrHead : MonoBehaviour
 			//cr0 = StartCoroutine (move (startPos1, endPos1, lerpTime, target));
 
 
-			Quaternion newRot = new Quaternion (0, 0, 0, 0);   //objectToRotate.transform.localRotation;
+			//Quaternion newRot = new Quaternion (0, 0, 0, 0);   //objectToRotate.transform.localRotation;
 			Vector3 origEulerRotation = new Vector3 (objectToRotateOrigRot.eulerAngles.x, objectToRotateOrigRot.eulerAngles.y, objectToRotateOrigRot.eulerAngles.z);
-			newRot.eulerAngles = new Vector3 (origEulerRotation.x + rotX, origEulerRotation.y + rotY, origEulerRotation.z + rotZ);
+			//newRot.eulerAngles = new Vector3 (origEulerRotation.x + rotX, origEulerRotation.y + rotY, origEulerRotation.z + rotZ);
 
 			startRot1 = objectToRotate.transform.localRotation;
-			endRot1 = newRot; //Quaternion.Inverse( newRot ); 
+			endRot1 = Quaternion.Inverse( q );  //newRot
 
 			cr1 = StartCoroutine (rotate (startRot1, endRot1, lerpTime, objectToRotate.transform));
 

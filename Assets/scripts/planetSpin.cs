@@ -22,7 +22,6 @@ public class planetSpin : MonoBehaviour
 	public Renderer clouds;
 	public GameObject corona;
 	public GameObject ring;
-	public GameObject nameTextGameObject;
 	public GameObject spinner;
 
 	private string nameText;
@@ -32,7 +31,7 @@ public class planetSpin : MonoBehaviour
 	private Texture cloudTexture;
 	private Texture coronaTexture;
 	private Texture ringTexture;
-	private TextMesh textMesh;
+
 
 	public void Init ()
 	{
@@ -75,7 +74,7 @@ public class planetSpin : MonoBehaviour
 
 		diffuseTexture = Resources.Load(strImage) as Texture;	
 
-		diffuse.materials [0].mainTexture = diffuseTexture;
+		diffuse.materials[0].mainTexture = diffuseTexture;
 
 		string strEmmissiveImage = _name + "_emmissive";	
 
@@ -94,11 +93,11 @@ public class planetSpin : MonoBehaviour
 
 		}
 
-
 		string cloudImage = _name + "_cloud";
-		clouds.materials [0].mainTexture = Resources.Load (cloudImage) as Texture;
+		Texture cloudTexture = Resources.Load(cloudImage) as Texture;
 
-		clouds.materials [0].SetTexture ("_EmissionMap", Resources.Load (cloudImage) as Texture);
+		clouds.materials [0].mainTexture = cloudTexture;
+		clouds.materials [0].SetTexture ("_EmissionMap", cloudTexture);
 
 
 		string coronaFile = _name + "_corona";
@@ -115,11 +114,7 @@ public class planetSpin : MonoBehaviour
 
 	public void setName (string _name)
 	{
-		if( nameTextGameObject )
-		textMesh = nameTextGameObject.GetComponentInChildren<TextMesh> ();
-
 		nameText = _name;
-
 	}
 
 	public string getName ()
@@ -130,9 +125,8 @@ public class planetSpin : MonoBehaviour
 
 	public void activateZoomed (bool _active)
 	{
-		nameTextGameObject.SetActive (_active);
 
-		textMesh.text = getName ();
+		GalaxyManager.instance.NameText.text = getName ();
 
 		spinner.SetActive (!_active);
 	}
@@ -177,8 +171,7 @@ public class planetSpin : MonoBehaviour
 				c2 = StartCoroutine (scaleValue ( 3.66f, 20.0f, lerpTime*0.5f ));
 			#endif
 
-			textMesh.text = "Sector View";
-			textMesh.gameObject.SetActive(false);
+			GalaxyManager.instance.NameText.text = "Sector View";
 
 			MyCube.Load ();
 
@@ -197,8 +190,7 @@ public class planetSpin : MonoBehaviour
 				c2 = StartCoroutine (scaleValue ( 3.66f, 20.0f, lerpTime*0.5f  ));
 			#endif 
 
-			textMesh.text = getName ();
-			textMesh.gameObject.SetActive(false);
+			GalaxyManager.instance.NameText.text = "";
 
 			MyCubeGameobject.transform.localScale = CubeOrigScale;
 			c0 = StartCoroutine (scale (CubeOrigScale, scale1, lerpTime, MyCubeGameobject,true));
@@ -227,7 +219,7 @@ public class planetSpin : MonoBehaviour
 
 		}
 
-		textMesh.gameObject.SetActive(true);
+
 		GalaxyManager.instance.animating = false;
 		if (hide)
 			obj.SetActive (false);
