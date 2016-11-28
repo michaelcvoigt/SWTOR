@@ -40,7 +40,7 @@ public class GvrHead : MonoBehaviour
 	void Update ()
 	{
 
-	  /*
+		/*
 		if (!headCentered && OVRPlugin.userPresent) {
 
 			VR.InputTracking.Recenter ();
@@ -79,12 +79,12 @@ public class GvrHead : MonoBehaviour
 		UpdateHead ();
 	}
 
-	void OnApplicationFocus( bool hasFocus )
+	void OnApplicationFocus (bool hasFocus)
 	{
 		isPaused = !hasFocus;
 	}
 
-	void OnApplicationPause( bool pauseStatus )
+	void OnApplicationPause (bool pauseStatus)
 	{
 		isPaused = pauseStatus;
 	}
@@ -93,7 +93,7 @@ public class GvrHead : MonoBehaviour
 	private void UpdateHead ()
 	{
 
-		if (updated  || isPaused ) {  // Only one update per frame, please.
+		if (updated || isPaused) {  // Only one update per frame, please.
 			return;
 		}
 
@@ -108,13 +108,13 @@ public class GvrHead : MonoBehaviour
 		//float posZ = 0; //(q.z * 10.0f);			
 
 		/*
-								Vector3 headPosition = InputTracking.GetLocalPosition (VRNode.Head);
+		Vector3 headPosition = InputTracking.GetLocalPosition (VRNode.Head);
 
 		float headX = headPosition.x / 100;
 		float headY = headPosition.y / 100;
 		float headZ = headPosition.z / 100;
 
-								transform.position = new Vector3 ( transform.position.x +  headX,transform.position.y + headY, transform.position.z + headZ );
+		transform.position = new Vector3 ( transform.position.x +  headX,transform.position.y + headY, transform.position.z + headZ );
 */
 							
 	
@@ -137,7 +137,6 @@ public class GvrHead : MonoBehaviour
 				//endPos0 = objectToRotateOrigPosition;
 
 				//cr1 = StartCoroutine (move (startPos0, endPos0, lerpTime, target));
-
 
 				//Quaternion newRot = new Quaternion (0, 0, 0, 0); //Quaternion newRot = transform.localRotation;
 				//newRot.eulerAngles = new Vector3 (objectToRotateOrigRot.x + rotX, objectToRotateOrigRot.y + rotY, objectToRotateOrigRot.z + rotZ);
@@ -183,25 +182,30 @@ public class GvrHead : MonoBehaviour
 			//newRot.eulerAngles = new Vector3 (origEulerRotation.x + rotX, origEulerRotation.y + rotY, origEulerRotation.z + rotZ);
 
 			startRot1 = objectToRotate.transform.localRotation;
-			endRot1 = Quaternion.Inverse( q );  //newRot
+			endRot1 = Quaternion.Inverse (q);  //newRot
+
+			//Quaternion finalRot1 = new Quaternion (endRot1.x , endRot1.y , endRot1.z, endRot1.w);
+			//Vector3 xFactor = new Vector3(finalRot1.eulerAngles.x * 90.0f, finalRot1.eulerAngles.y, finalRot1.eulerAngles.z );
+			//finalRot1.eulerAngles = xFactor;
+			//GalaxyManager.instance.NameText.text = finalRot1 + "--" +startRot1;
 
 			cr1 = StartCoroutine (rotate (startRot1, endRot1, lerpTime, objectToRotate.transform));
 
+
+			// x = up and down
+			// y = right left  ( max 0.3 )
 
 		}
 	
 
 	}
 
-
 	public void SetTarget (Transform _target, Transform _objectToRotate)
 	{
 
 		objectToRotate = _objectToRotate;
 		target = _target;
-
-
-			
+	
 	}
 
 	public void SetTargetNull ()
@@ -217,12 +221,10 @@ public class GvrHead : MonoBehaviour
 		float elapsedTime = 0;
 
 		while (elapsedTime < time) {
-			obj.rotation = Quaternion.Lerp (start, end, (elapsedTime / time));
-
+			
+			obj.rotation = Quaternion.SlerpUnclamped (start, end, (elapsedTime / time));
 			elapsedTime += Time.deltaTime;
-
 			yield return new WaitForEndOfFrame ();
-
 
 		}
 

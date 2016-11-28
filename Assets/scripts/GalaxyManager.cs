@@ -6,8 +6,9 @@ using VacuumShaders.CurvedWorld;
 using System.Collections;
 
 // performance problem with killer base
-
 // android : fix killer base
+
+
 // make emmissive channels for all planets
 
 // rotation gets messed up as you go away from front view
@@ -358,7 +359,7 @@ public class GalaxyManager : MonoBehaviour
 
 	private void release ()
 	{
-		NameText.text = "";
+		
 
 		if (heldObject) {
 			activateOnTouch.Release (GvrMain, heldOrigPosition, heldObject);
@@ -369,7 +370,8 @@ public class GalaxyManager : MonoBehaviour
 
 		}
 
-
+		print ("released");
+		NameText.text = "";
 		holding = false;
 		zoomed = false;
 	}
